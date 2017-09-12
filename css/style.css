@@ -571,3 +571,23 @@ div[class^="x"] {
 body {
   overflow-y: hidden;
 }
+/* line 3, ../sass/_global.scss */
+body .buttons {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 9, ../sass/_global.scss */
+body .buttons .cloud {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+/* line 13, ../sass/_global.scss */
+body .buttons .cloud a {
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  z-index: 1;
+}

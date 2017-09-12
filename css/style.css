@@ -565,48 +565,47 @@ div[class^="x"] {
   z-indeX: -1;
 }
 
-/* Cloud colors */
-/* line 158, ../sass/_clouds.scss */
+/* line 152, ../sass/_clouds.scss */
 .cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
   background: #85E7F2 !important;
 }
 
-/* line 161, ../sass/_clouds.scss */
+/* line 155, ../sass/_clouds.scss */
 .cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
   background: #4b93ff !important;
 }
 
-/* line 164, ../sass/_clouds.scss */
+/* line 158, ../sass/_clouds.scss */
 .cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
   background: #0056ff !important;
 }
 
-/* line 167, ../sass/_clouds.scss */
+/* line 161, ../sass/_clouds.scss */
 .cloud.color-3:after, .cloud.color-3, .cloud.color-3:before {
   background: #044D8C !important;
 }
 
-/* line 170, ../sass/_clouds.scss */
+/* line 164, ../sass/_clouds.scss */
 .cloud.color-4:after, .cloud.color-4, .cloud.color-4:before {
   background: #6C9BD9 !important;
 }
 
-/* line 173, ../sass/_clouds.scss */
+/* line 167, ../sass/_clouds.scss */
 .cloud.color-5:after, .cloud.color-5, .cloud.color-5:before {
   background: #0E2759 !important;
 }
 
-/* line 176, ../sass/_clouds.scss */
+/* line 170, ../sass/_clouds.scss */
 .cloud.color-6:after, .cloud.color-6, .cloud.color-6:before {
   background: #E3DBD8 !important;
 }
 
-/* line 179, ../sass/_clouds.scss */
+/* line 173, ../sass/_clouds.scss */
 .cloud.color-7:after, .cloud.color-7, .cloud.color-7:before {
   background: #C4DAFF !important;
 }
 
-/* line 193, ../sass/_clouds.scss */
+/* line 187, ../sass/_clouds.scss */
 .cloud:after {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -617,7 +616,7 @@ div[class^="x"] {
   width: 100px;
 }
 
-/* line 204, ../sass/_clouds.scss */
+/* line 198, ../sass/_clouds.scss */
 .cloud:before {
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;

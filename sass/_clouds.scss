@@ -148,13 +148,7 @@ div[class^="x"]{
   position: absolute;
   z-indeX: -1;
 }
-/* Cloud colors */
-// @for $i from 0 through 7 {
-//    .cloud.color-#{$i}::after,
-//    .cloud.color-#{$i}::before {
-//       background: $blue+$i !important;
-//    }
-// }
+
 .cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
   background: $blue0 !important;
 }

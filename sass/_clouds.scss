@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+.buttons {
+   @media(max-width: $break800) {
+      flex-direction: column;
+   }
+}
+
 #background-wrap {
   bottom: 0;
   left: 0;
@@ -122,6 +128,16 @@ body {
   height: 120px;
   position: relative;
   width: 350px;
+
+  @media (max-width: $break800) {
+     width: 280px;
+   }
+
+   &:not(:last-of-type) {
+      @media (max-width: $break800) {
+         margin-bottom: 50px;
+       }
+   }
 }
 div[class^="x"]{
   z-index: 1;
@@ -132,19 +148,41 @@ div[class^="x"]{
   position: absolute;
   z-indeX: -1;
 }
-/* Cloud colors */
+
 .cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
-  background: $blue1 !important;
+  background: $blue0 !important;
 }
 .cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
-  background: $blue2 !important;
+  background: $blue1 !important;
 }
 .cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
-  background: $blue3 !important;
+  background: $blue2 !important;
 }
 .cloud.color-3:after, .cloud.color-3, .cloud.color-3:before {
-  background: $white !important;
+  background: $blue3 !important;
 }
+.cloud.color-4:after, .cloud.color-4, .cloud.color-4:before {
+  background: $blue4 !important;
+}
+.cloud.color-5:after, .cloud.color-5, .cloud.color-5:before {
+  background: $blue5 !important;
+}
+.cloud.color-6:after, .cloud.color-6, .cloud.color-6:before {
+  background: $blue6 !important;
+}
+.cloud.color-7:after, .cloud.color-7, .cloud.color-7:before {
+  background: $blue7 !important;
+}
+
+// .cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
+//   background: $blue2 !important;
+// }
+// .cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
+//   background: $blue3 !important;
+// }
+// .cloud.color-3:after, .cloud.color-3, .cloud.color-3:before {
+//   background: $white !important;
+// }
 
 .cloud:after {
   -webkit-border-radius: 100px;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 /*$background: linear-gradient(to bottom, #405166 0%,#656f6f 100%);*/
 /* line 1, ../sass/_home.scss */
 html, body {
@@ -15,20 +15,48 @@ section#section-one {
   height: 100vh;
 }
 /* line 12, ../sass/_home.scss */
-section#section-one ul {
+section#section-one header {
+  padding: 20px;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  display: flex;
+}
+/* line 18, ../sass/_home.scss */
+section#section-one header img {
+  width: 120px;
+}
+/* line 22, ../sass/_home.scss */
+section#section-one header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 25, ../sass/_home.scss */
+section#section-one header ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+/* line 31, ../sass/_home.scss */
+section#section-one header ul li a:hover {
+  color: #b2b2b2;
+}
+/* line 38, ../sass/_home.scss */
+section#section-one .calque {
+  height: 100vh;
+  width: 100%;
+  z-index: 10000;
   position: absolute;
 }
-/* line 14, ../sass/_home.scss */
-section#section-one ul li {
-  display: inline-block;
-}
-/* line 19, ../sass/_home.scss */
+/* line 45, ../sass/_home.scss */
 section#section-one .slider .slide {
   height: 100vh;
   width: 100%;
   background-size: cover;
 }
-/* line 23, ../sass/_home.scss */
+/* line 49, ../sass/_home.scss */
 section#section-one .slider .slide:after {
   content: '';
   display: block;
@@ -39,4 +67,11 @@ section#section-one .slider .slide:after {
   top: 0;
   left: 0;
   z-index: 1;
+}
+/* line 63, ../sass/_home.scss */
+section#section-two {
+  position: relative;
+  height: 100vh;
+  background: url(../img/rrelight.jpg) no-repeat center, black;
+  color: #FFFFFF;
 }

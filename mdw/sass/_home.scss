@@ -9,11 +9,37 @@ section#section-{
   &one{
     position: relative;
     height: 100vh;
-    ul{
+    header{
+      padding: 20px;
+      z-index: 1;
       position: absolute;
-      li{
-        display: inline-block;
+      align-items: center;
+      display: flex;
+      img{
+        width: 120px;
       }
+      ul{
+        li{
+          display: inline-block;
+          margin: 0 10px;
+          a{
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            transition: $anim_default;
+            &:hover{
+              color: $grey1;
+            }
+          }
+        }
+      }
+    }
+    .calque{
+      height: 100vh;
+      width: 100%;
+      z-index: 10000;
+      position: absolute;
     }
     .slider{
       .slide{
@@ -33,5 +59,11 @@ section#section-{
         }
       }
     }
+  }
+  &two{
+    position: relative;
+    height: 100vh;
+    background: url(../img/rrelight.jpg) no-repeat center, black;
+    color: $white;
   }
 }

@@ -28,7 +28,7 @@ function animation() {
 function colorCloud() {
     var colorClass = "";
     $('.cloud').each(function(){
-        var colorClass = "color-"+Math.floor(Math.floor(Math.random() * 3));
+        var colorClass = "color-"+Math.floor(Math.floor(Math.random() * 4));
         $(this).addClass(colorClass);
     });
 

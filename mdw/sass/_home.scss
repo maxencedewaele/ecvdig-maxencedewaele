@@ -90,6 +90,11 @@ section#section-{
       clip:rect(0,900px,0,0);
       animation:noise-anim-2 3s infinite linear alternate-reverse;
     }
+    canvas{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 footer{

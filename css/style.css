@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+/*$background: linear-gradient(to bottom, #405166 0%,#656f6f 100%);*/
+/* line 1, ../sass/_page.scss */
+#cat {
+  width: 120px;
+  height: 120px;
+  background-image: url(https://25.media.tumblr.com/11c0e3102a51c848f61976df8280827c/tumblr_mib819Yg8s1s5jjtzo1_500.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+/* line 12, ../sass/_page.scss */
+body {
+  background: #00b4ff;
+  color: #333;
+  font: 100% Arial, Sans Serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* line 22, ../sass/_page.scss */
+#background-wrap {
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes animateCloud {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-moz-keyframes animateCloud {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes animateCloud {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+/* ANIMATIONS */
+/* line 63, ../sass/_page.scss */
+.x1 {
+  -webkit-animation: animateCloud 35s linear infinite;
+  -moz-animation: animateCloud 35s linear infinite;
+  animation: animateCloud 35s linear infinite;
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  transform: scale(0.65);
+}
+
+/* line 73, ../sass/_page.scss */
+.x2 {
+  -webkit-animation: animateCloud 20s linear infinite;
+  -moz-animation: animateCloud 20s linear infinite;
+  animation: animateCloud 20s linear infinite;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/* line 83, ../sass/_page.scss */
+.x3 {
+  -webkit-animation: animateCloud 30s linear infinite;
+  -moz-animation: animateCloud 30s linear infinite;
+  animation: animateCloud 30s linear infinite;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+/* line 93, ../sass/_page.scss */
+.x4 {
+  -webkit-animation: animateCloud 18s linear infinite;
+  -moz-animation: animateCloud 18s linear infinite;
+  animation: animateCloud 18s linear infinite;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+/* line 103, ../sass/_page.scss */
+.x5 {
+  -webkit-animation: animateCloud 25s linear infinite;
+  -moz-animation: animateCloud 25s linear infinite;
+  animation: animateCloud 25s linear infinite;
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  transform: scale(0.55);
+}
+
+/* OBJECTS */
+/* line 115, ../sass/_page.scss */
+.cloud {
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(100%, #f1f1f1));
+  background: -webkit-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+  background: -o-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+  background: -ms-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+  background: linear-gradient(top, #fff 5%, #f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  height: 120px;
+  position: relative;
+  width: 350px;
+}
+
+/* line 137, ../sass/_page.scss */
+div[class^="x"] {
+  z-index: 1;
+}
+
+/* line 140, ../sass/_page.scss */
+.cloud:after, .cloud:before {
+  /*background: #fff;*/
+  content: '';
+  position: absolute;
+  z-indeX: -1;
+}
+
+/* Cloud colors */
+/* line 147, ../sass/_page.scss */
+.cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
+  background: #66ebff !important;
+}
+
+/* line 150, ../sass/_page.scss */
+.cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
+  background: #4b93ff !important;
+}
+
+/* line 153, ../sass/_page.scss */
+.cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
+  background: #533d4a !important;
+}
+
+/* line 157, ../sass/_page.scss */
+.cloud:after {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  height: 100px;
+  left: 50px;
+  top: -50px;
+  width: 100px;
+}
+
+/* line 168, ../sass/_page.scss */
+.cloud:before {
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  width: 180px;
+  height: 180px;
+  right: 50px;
+  top: -90px;
+}
+
+/*Title effect*/
+/* line 180, ../sass/_page.scss */
+html {
+  height: 100%;
+}
+
+/* line 184, ../sass/_page.scss */
+body {
+  font-family: 'Fjalla One', sans-serif;
+  /*background: $background;*/
+}
+
+/* line 189, ../sass/_page.scss */
+.container {
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  max-width: 225px;
+}
+
+/* line 198, ../sass/_page.scss */
+.button {
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+  color: #300280;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+/* line 210, ../sass/_page.scss */
+.button span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+}
+
+/* line 219, ../sass/_page.scss */
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+/* line 228, ../sass/_page.scss */
+.title {
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+}
+/* line 235, ../sass/_page.scss */
+.title span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+}
+
+/* line 247, ../sass/_page.scss */
+.title:nth-child(1) {
+  color: #66ebff;
+}
+/* line 250, ../sass/_page.scss */
+.title:nth-child(2) {
+  color: #4b93ff;
+}
+/* line 253, ../sass/_page.scss */
+.title:nth-child(3) {
+  color: #0056ff;
+}

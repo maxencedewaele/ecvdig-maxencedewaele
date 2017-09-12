@@ -15,49 +15,20 @@ section#section-one {
   height: 100vh;
 }
 /* line 12, ../sass/_home.scss */
-section#section-one header {
-  padding: 20px;
-  z-index: 1;
-  position: absolute;
-  align-items: center;
-  display: flex;
-}
-/* line 18, ../sass/_home.scss */
-section#section-one header img {
-  width: 120px;
-}
-/* line 22, ../sass/_home.scss */
-section#section-one header ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-/* line 25, ../sass/_home.scss */
-section#section-one header ul li a {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.5s ease-in-out;
-}
-/* line 31, ../sass/_home.scss */
-section#section-one header ul li a:hover {
-  color: #b2b2b2;
-}
-/* line 38, ../sass/_home.scss */
 section#section-one .calque {
   height: 100vh;
   width: 100%;
-  z-index: 10000;
+  z-index: 99;
   position: absolute;
 }
-/* line 45, ../sass/_home.scss */
+/* line 19, ../sass/_home.scss */
 section#section-one .slider .slide {
   height: 100vh;
   width: 100%;
   background-size: cover;
 }
-/* line 49, ../sass/_home.scss */
-section#section-one .slider .slide:after {
+/* line 24, ../sass/_home.scss */
+section#section-one .slider:after {
   content: '';
   display: block;
   width: 100%;
@@ -68,10 +39,299 @@ section#section-one .slider .slide:after {
   left: 0;
   z-index: 1;
 }
-/* line 63, ../sass/_home.scss */
+/* line 37, ../sass/_home.scss */
 section#section-two {
   position: relative;
   height: 100vh;
   background: url(../img/rrelight.jpg) no-repeat center, black;
   color: #FFFFFF;
+}
+/* line 43, ../sass/_home.scss */
+section#section-two .glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 440px;
+  top: 150px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+@keyframes noise-anim {
+  0% {
+    clip: rect(5px, 9999px, 27px, 0);
+  }
+  5% {
+    clip: rect(43px, 9999px, 17px, 0);
+  }
+  10% {
+    clip: rect(53px, 9999px, 94px, 0);
+  }
+  15% {
+    clip: rect(64px, 9999px, 7px, 0);
+  }
+  20% {
+    clip: rect(1px, 9999px, 82px, 0);
+  }
+  25% {
+    clip: rect(82px, 9999px, 79px, 0);
+  }
+  30% {
+    clip: rect(33px, 9999px, 44px, 0);
+  }
+  35% {
+    clip: rect(100px, 9999px, 86px, 0);
+  }
+  40% {
+    clip: rect(54px, 9999px, 28px, 0);
+  }
+  45% {
+    clip: rect(43px, 9999px, 31px, 0);
+  }
+  50% {
+    clip: rect(85px, 9999px, 37px, 0);
+  }
+  55% {
+    clip: rect(83px, 9999px, 80px, 0);
+  }
+  60% {
+    clip: rect(43px, 9999px, 18px, 0);
+  }
+  65% {
+    clip: rect(65px, 9999px, 91px, 0);
+  }
+  70% {
+    clip: rect(55px, 9999px, 8px, 0);
+  }
+  75% {
+    clip: rect(40px, 9999px, 13px, 0);
+  }
+  80% {
+    clip: rect(93px, 9999px, 58px, 0);
+  }
+  85% {
+    clip: rect(92px, 9999px, 68px, 0);
+  }
+  90% {
+    clip: rect(90px, 9999px, 94px, 0);
+  }
+  95% {
+    clip: rect(32px, 9999px, 43px, 0);
+  }
+  100% {
+    clip: rect(68px, 9999px, 24px, 0);
+  }
+}
+/* line 60, ../sass/_home.scss */
+section#section-two .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(69px, 9999px, 52px, 0);
+  }
+  5% {
+    clip: rect(73px, 9999px, 36px, 0);
+  }
+  10% {
+    clip: rect(89px, 9999px, 36px, 0);
+  }
+  15% {
+    clip: rect(2px, 9999px, 32px, 0);
+  }
+  20% {
+    clip: rect(74px, 9999px, 56px, 0);
+  }
+  25% {
+    clip: rect(96px, 9999px, 30px, 0);
+  }
+  30% {
+    clip: rect(79px, 9999px, 6px, 0);
+  }
+  35% {
+    clip: rect(81px, 9999px, 56px, 0);
+  }
+  40% {
+    clip: rect(17px, 9999px, 24px, 0);
+  }
+  45% {
+    clip: rect(19px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 84px, 0);
+  }
+  55% {
+    clip: rect(95px, 9999px, 55px, 0);
+  }
+  60% {
+    clip: rect(14px, 9999px, 57px, 0);
+  }
+  65% {
+    clip: rect(24px, 9999px, 37px, 0);
+  }
+  70% {
+    clip: rect(88px, 9999px, 99px, 0);
+  }
+  75% {
+    clip: rect(49px, 9999px, 21px, 0);
+  }
+  80% {
+    clip: rect(42px, 9999px, 78px, 0);
+  }
+  85% {
+    clip: rect(5px, 9999px, 62px, 0);
+  }
+  90% {
+    clip: rect(43px, 9999px, 55px, 0);
+  }
+  95% {
+    clip: rect(33px, 9999px, 36px, 0);
+  }
+  100% {
+    clip: rect(49px, 9999px, 20px, 0);
+  }
+}
+/* line 81, ../sass/_home.scss */
+section#section-two .glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/* line 95, ../sass/_home.scss */
+footer {
+  color: #FFFFFF;
+  background: url(https://wallpaperscraft.com/image/dark_spots_texture_background_50355_1920x1080.jpg) no-repeat center;
+  background-size: cover;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 103, ../sass/_home.scss */
+footer ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 107, ../sass/_home.scss */
+footer ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+/* line 110, ../sass/_home.scss */
+footer ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+/* line 116, ../sass/_home.scss */
+footer ul li a:hover {
+  color: #b2b2b2;
+}
+
+/* line 4, ../sass/_header.scss */
+.container-arrows {
+  bottom: 0;
+  height: 200px;
+  left: 50%;
+  position: absolute;
+}
+/* line 9, ../sass/_header.scss */
+.container-arrows .arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+/* line 18, ../sass/_header.scss */
+.container-arrows .arrow-1 {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+/* line 21, ../sass/_header.scss */
+.container-arrows .arrow-2 {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+/* line 25, ../sass/_header.scss */
+.container-arrows .arrow:before,
+.container-arrows .arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+/* line 37, ../sass/_header.scss */
+.container-arrows .arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+/* line 42, ../sass/_header.scss */
+.container-arrows .arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 63, ../sass/_header.scss */
+section#section-one header {
+  padding: 20px 40px;
+  z-index: 100;
+  position: absolute;
+  align-items: center;
+  display: flex;
+}
+/* line 69, ../sass/_header.scss */
+section#section-one header img {
+  width: 120px;
+}
+/* line 73, ../sass/_header.scss */
+section#section-one header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 76, ../sass/_header.scss */
+section#section-one header ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+/* line 82, ../sass/_header.scss */
+section#section-one header ul li a:hover {
+  color: #b2b2b2;
 }

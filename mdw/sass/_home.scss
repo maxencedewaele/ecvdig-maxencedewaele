@@ -9,36 +9,10 @@ section#section-{
   &one{
     position: relative;
     height: 100vh;
-    header{
-      padding: 20px;
-      z-index: 1;
-      position: absolute;
-      align-items: center;
-      display: flex;
-      img{
-        width: 120px;
-      }
-      ul{
-        li{
-          display: inline-block;
-          margin: 0 10px;
-          a{
-            color: $white;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 500;
-            transition: $anim_default;
-            &:hover{
-              color: $grey1;
-            }
-          }
-        }
-      }
-    }
     .calque{
       height: 100vh;
       width: 100%;
-      z-index: 10000;
+      z-index: 99;
       position: absolute;
     }
     .slider{
@@ -46,17 +20,17 @@ section#section-{
         height: 100vh;
         width: 100%;
         background-size: cover;
-        &:after{
-          content: '';
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 40%);
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-        }
+      }
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 40%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
       }
     }
   }
@@ -65,5 +39,84 @@ section#section-{
     height: 100vh;
     background: url(../img/rrelight.jpg) no-repeat center, black;
     color: $white;
+
+    .glitch{
+      color:white;
+      font-size:100px;
+      position:relative;
+      width: 440px;
+      top: 150px;
+      opacity: 0.7;
+      margin:0 auto;
+    }
+    @keyframes noise-anim{
+      $steps:20;
+      @for $i from 0 through $steps{
+        #{percentage($i*(1/$steps))}{
+          clip:rect(random(100)+px,9999px,random(100)+px,0);
+        }
+      }
+    }
+    .glitch:after{
+      content:attr(data-text);
+      position:absolute;
+      left:2px;
+      text-shadow:-1px 0 red;
+      top:0;
+      color:white;
+      background:black;
+      overflow:hidden;
+      clip:rect(0,900px,0,0);
+      animation:noise-anim 2s infinite linear alternate-reverse;
+    }
+
+    @keyframes noise-anim-2{
+      $steps:20;
+      @for $i from 0 through $steps{
+        #{percentage($i*(1/$steps))}{
+          clip:rect(random(100)+px,9999px,random(100)+px,0);
+        }
+      }
+    }
+    .glitch:before{
+      content:attr(data-text);
+      position:absolute;
+      left:-2px;
+      text-shadow:1px 0 blue;
+      top:0;
+      color:white;
+      background:black;
+      overflow:hidden;
+      clip:rect(0,900px,0,0);
+      animation:noise-anim-2 3s infinite linear alternate-reverse;
+    }
+  }
+}
+footer{
+  color: $white;
+  background: url(https://wallpaperscraft.com/image/dark_spots_texture_background_50355_1920x1080.jpg) no-repeat center;
+  background-size: cover;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul{
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    li{
+      margin: 0 10px;
+      display: inline-block;
+      a{
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        transition: $anim_default;
+        &:hover{
+          color: $grey1;
+        }
+      }
+    }
   }
 }

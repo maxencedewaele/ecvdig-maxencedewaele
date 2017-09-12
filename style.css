@@ -9,14 +9,14 @@
     background: url(http://blog.fifimandirac.com/wp-content/uploads/2015/11/Motififi019A.jpg);
 }*/
 #cat {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     background-image: url(https://25.media.tumblr.com/11c0e3102a51c848f61976df8280827c/tumblr_mib819Yg8s1s5jjtzo1_500.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 30px;
-    left: 30px
+    top: 45%;
+    left: 45%;
 }
 body {
     background: #00b4ff;
@@ -145,10 +145,20 @@ body {
 }
 
 .cloud:after, .cloud:before {
-    background: #fff;
-    content: '';
-    position: absolute;
-    z-indeX: -1;
+     /*background: #fff;*/
+     content: '';
+     position: absolute;
+     z-indeX: -1;
+ }
+/* Cloud colors */
+.cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
+    background: #66ebff !important;
+}
+.cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
+    background: #4b93ff !important;
+}
+.cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
+    background: #0056ff !important;
 }
 
 .cloud:after {

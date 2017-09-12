@@ -1,3 +1,11 @@
+function colorCloud() {
+    var colorClass = "";
+    $('.cloud').each(function(){
+        var colorClass = "color-"+Math.floor(Math.floor(Math.random() * 3));
+        $(this).addClass(colorClass);
+    });
+
+}
 function moveLeft(elt) {
     elt.style.left = elt.offsetLeft - elt.clientWidth + "px";
 }
@@ -14,6 +22,7 @@ function moveUp(elt) {
     elt.style.top = elt.offsetTop - elt.clientHeight + "px";
 }
 
+    colorCloud();
 document.getElementById("cat").onmouseover = function(e) {
     var pageLeft = this.offsetLeft;
     var pageTop = this.offsetTop;

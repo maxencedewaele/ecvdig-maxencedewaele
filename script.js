@@ -27,9 +27,14 @@ function animation() {
 
 function colorCloud() {
     var colorClass = "";
-    $('.cloud').each(function(){
-        var colorClass = "color-"+Math.floor(Math.floor(Math.random() * 4));
-        $(this).addClass(colorClass);
+    var  indexes;
+    var colors = ["0","1","2","3","4","5","6","7"];
+
+    $('.cloud').each(function(index, value){
+      indexes = Math.floor(Math.random()*colors.length);
+      colorClass = "color-" + colors[indexes];
+      colors.splice(indexes,1);
+      $(this).addClass(colorClass);
     });
 
 }

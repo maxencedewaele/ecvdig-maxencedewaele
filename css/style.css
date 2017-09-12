@@ -9,9 +9,16 @@
   margin: -150px 0 0 -150px;
   width: 300px;
   height: 300px;
+  z-index: 3;
+}
+@media (max-width: 800px) {
+  /* line 2, ../sass/_sun.scss */
+  #sun {
+    display: none;
+  }
 }
 
-/* line 10, ../sass/_sun.scss */
+/* line 17, ../sass/_sun.scss */
 #sun *,
 #sun *:before,
 #sun *:after {
@@ -19,14 +26,14 @@
 }
 
 /* Rings */
-/* line 17, ../sass/_sun.scss */
+/* line 24, ../sass/_sun.scss */
 #rings {
   top: 50%;
   left: 50%;
   z-index: 1;
 }
 
-/* line 22, ../sass/_sun.scss */
+/* line 29, ../sass/_sun.scss */
 #rings div:before,
 #rings div:after {
   content: "";
@@ -38,30 +45,30 @@
   background: inherit;
 }
 
-/* line 32, ../sass/_sun.scss */
+/* line 39, ../sass/_sun.scss */
 #rings div:before {
   transform: rotate(60deg);
 }
 
-/* line 35, ../sass/_sun.scss */
+/* line 42, ../sass/_sun.scss */
 #rings div:after {
   transform: rotate(-60deg);
 }
 
 /* Rings rotation & animation */
-/* line 40, ../sass/_sun.scss */
+/* line 47, ../sass/_sun.scss */
 #rings div:nth-child(even) {
   animation: rotateR 12s infinite linear;
 }
 
-/* line 43, ../sass/_sun.scss */
+/* line 50, ../sass/_sun.scss */
 #rings div:nth-child(odd) {
   animation: rotateL 12s infinite linear;
   transform: rotate(15deg);
 }
 
 /* Rings each*/
-/* line 49, ../sass/_sun.scss */
+/* line 56, ../sass/_sun.scss */
 #rings div:nth-child(1) {
   animation-duration: 45s;
   background: rgba(255, 230, 84, 0.5);
@@ -70,7 +77,7 @@
   margin: -100px 0 0 -100px;
 }
 
-/* line 56, ../sass/_sun.scss */
+/* line 63, ../sass/_sun.scss */
 #rings div:nth-child(2) {
   animation-duration: 49s;
   background: rgba(253, 255, 55, 0.5);
@@ -79,7 +86,7 @@
   margin: -95px 0 0 -95px;
 }
 
-/* line 63, ../sass/_sun.scss */
+/* line 70, ../sass/_sun.scss */
 #rings div:nth-child(3) {
   animation-duration: 56s;
   background: rgba(254, 255, 164, 0.5);
@@ -88,7 +95,7 @@
   margin: -90px 0 0 -90px;
 }
 
-/* line 70, ../sass/_sun.scss */
+/* line 77, ../sass/_sun.scss */
 #rings div:nth-child(4) {
   animation-duration: 93s;
   background: rgba(255, 247, 61, 0.5);
@@ -98,7 +105,7 @@
 }
 
 /* Face */
-/* line 79, ../sass/_sun.scss */
+/* line 86, ../sass/_sun.scss */
 #face {
   top: 50%;
   left: 50%;
@@ -108,7 +115,7 @@
   z-index: 5;
 }
 
-/* line 87, ../sass/_sun.scss */
+/* line 94, ../sass/_sun.scss */
 #face [id^="eye-"] {
   transform: rotate(-45deg);
   border-radius: 0 50% 0 50%;
@@ -125,19 +132,19 @@
   background: radial-gradient(circle at center, #000000 38%, #62c3ff 41%, #62c3ff 63%, #edd552 66%);
 }
 
-/* line 102, ../sass/_sun.scss */
+/* line 109, ../sass/_sun.scss */
 #face #eye-1 {
   left: 50%;
   margin-left: -45px;
 }
 
-/* line 106, ../sass/_sun.scss */
+/* line 113, ../sass/_sun.scss */
 #face #eye-2 {
   right: 50%;
   margin-right: -45px;
 }
 
-/* line 110, ../sass/_sun.scss */
+/* line 117, ../sass/_sun.scss */
 #face #nose {
   width: 6px;
   height: 58px;
@@ -148,7 +155,7 @@
   background: #7f010b;
 }
 
-/* line 119, ../sass/_sun.scss */
+/* line 126, ../sass/_sun.scss */
 #face #mouth {
   width: 80px;
   height: 40px;
@@ -160,7 +167,7 @@
   border-top: 0;
 }
 
-/* line 129, ../sass/_sun.scss */
+/* line 136, ../sass/_sun.scss */
 #face #mouth:before,
 #face #mouth:after {
   content: "";
@@ -171,12 +178,12 @@
   top: -12px;
 }
 
-/* line 138, ../sass/_sun.scss */
+/* line 145, ../sass/_sun.scss */
 #face #mouth:before {
   left: -12px;
 }
 
-/* line 141, ../sass/_sun.scss */
+/* line 148, ../sass/_sun.scss */
 #face #mouth:after {
   right: -12px;
 }
@@ -263,26 +270,41 @@
   }
 }
 /* Layout */
-/* line 191, ../sass/_sun.scss */
+/* line 198, ../sass/_sun.scss */
 body {
   background: #fffce1;
 }
 
-/* line 194, ../sass/_sun.scss */
+/* line 201, ../sass/_sun.scss */
 body, html {
   height: 100%;
+}
+
+@media (max-width: 800px) {
+  /* line 207, ../sass/_sun.scss */
+  #rings > div {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 /* line 1, ../sass/_cat.scss */
 #cat {
   width: 120px;
   height: 120px;
-  background-image: url(https://25.media.tumblr.com/11c0e3102a51c848f61976df8280827c/tumblr_mib819Yg8s1s5jjtzo1_500.png);
+  background-image: url("../cat.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
+  z-index: 2;
   top: 45%;
   left: 45%;
+}
+@media (max-width: 800px) {
+  /* line 1, ../sass/_cat.scss */
+  #cat {
+    display: none;
+  }
 }
 
 /*Title effect*/
@@ -314,7 +336,7 @@ body {
   bottom: -65px;
   left: 50%;
   transform: translateX(-50%) rotate(-10deg);
-  color: #300280;
+  color: #6C9BD9;
   text-transform: uppercase;
   opacity: 0;
   visibility: hidden;
@@ -359,15 +381,15 @@ h1 {
 
 /* line 69, ../sass/_title.scss */
 .title:nth-child(1) {
-  color: #66ebff;
+  color: #4b93ff;
 }
 /* line 72, ../sass/_title.scss */
 .title:nth-child(2) {
-  color: #4b93ff;
+  color: #0056ff;
 }
 /* line 75, ../sass/_title.scss */
 .title:nth-child(3) {
-  color: #0056ff;
+  color: #044D8C;
 }
 
 /* line 1, ../sass/_house.scss */
@@ -402,7 +424,14 @@ body {
   overflow-x: hidden;
 }
 
-/* line 12, ../sass/_clouds.scss */
+@media (max-width: 800px) {
+  /* line 12, ../sass/_clouds.scss */
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+/* line 18, ../sass/_clouds.scss */
 #background-wrap {
   bottom: 0;
   left: 0;
@@ -439,7 +468,7 @@ body {
   }
 }
 /* ANIMATIONS */
-/* line 52, ../sass/_clouds.scss */
+/* line 58, ../sass/_clouds.scss */
 .x1 {
   -webkit-animation: animateCloud 35s linear infinite;
   -moz-animation: animateCloud 35s linear infinite;
@@ -449,7 +478,7 @@ body {
   transform: scale(0.65);
 }
 
-/* line 62, ../sass/_clouds.scss */
+/* line 68, ../sass/_clouds.scss */
 .x2 {
   -webkit-animation: animateCloud 20s linear infinite;
   -moz-animation: animateCloud 20s linear infinite;
@@ -459,7 +488,7 @@ body {
   transform: scale(0.3);
 }
 
-/* line 72, ../sass/_clouds.scss */
+/* line 78, ../sass/_clouds.scss */
 .x3 {
   -webkit-animation: animateCloud 30s linear infinite;
   -moz-animation: animateCloud 30s linear infinite;
@@ -469,7 +498,7 @@ body {
   transform: scale(0.5);
 }
 
-/* line 82, ../sass/_clouds.scss */
+/* line 88, ../sass/_clouds.scss */
 .x4 {
   -webkit-animation: animateCloud 18s linear infinite;
   -moz-animation: animateCloud 18s linear infinite;
@@ -479,7 +508,7 @@ body {
   transform: scale(0.4);
 }
 
-/* line 92, ../sass/_clouds.scss */
+/* line 98, ../sass/_clouds.scss */
 .x5 {
   -webkit-animation: animateCloud 25s linear infinite;
   -moz-animation: animateCloud 25s linear infinite;
@@ -490,7 +519,7 @@ body {
 }
 
 /* OBJECTS */
-/* line 104, ../sass/_clouds.scss */
+/* line 110, ../sass/_clouds.scss */
 .cloud {
   background: #fff;
   background: -moz-linear-gradient(top, #fff 5%, #f1f1f1 100%);
@@ -510,13 +539,25 @@ body {
   position: relative;
   width: 350px;
 }
+@media (max-width: 800px) {
+  /* line 110, ../sass/_clouds.scss */
+  .cloud {
+    width: 280px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 136, ../sass/_clouds.scss */
+  .cloud:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+}
 
-/* line 126, ../sass/_clouds.scss */
+/* line 142, ../sass/_clouds.scss */
 div[class^="x"] {
   z-index: 1;
 }
 
-/* line 129, ../sass/_clouds.scss */
+/* line 145, ../sass/_clouds.scss */
 .cloud:after, .cloud:before {
   /*background: #fff;*/
   content: '';
@@ -525,27 +566,47 @@ div[class^="x"] {
 }
 
 /* Cloud colors */
-/* line 136, ../sass/_clouds.scss */
+/* line 158, ../sass/_clouds.scss */
 .cloud.color-0:after, .cloud.color-0, .cloud.color-0:before {
-  background: #66ebff !important;
+  background: #85E7F2 !important;
 }
 
-/* line 139, ../sass/_clouds.scss */
+/* line 161, ../sass/_clouds.scss */
 .cloud.color-1:after, .cloud.color-1, .cloud.color-1:before {
   background: #4b93ff !important;
 }
 
-/* line 142, ../sass/_clouds.scss */
+/* line 164, ../sass/_clouds.scss */
 .cloud.color-2:after, .cloud.color-2, .cloud.color-2:before {
   background: #0056ff !important;
 }
 
-/* line 145, ../sass/_clouds.scss */
+/* line 167, ../sass/_clouds.scss */
 .cloud.color-3:after, .cloud.color-3, .cloud.color-3:before {
-  background: #FFFFFF !important;
+  background: #044D8C !important;
 }
 
-/* line 149, ../sass/_clouds.scss */
+/* line 170, ../sass/_clouds.scss */
+.cloud.color-4:after, .cloud.color-4, .cloud.color-4:before {
+  background: #6C9BD9 !important;
+}
+
+/* line 173, ../sass/_clouds.scss */
+.cloud.color-5:after, .cloud.color-5, .cloud.color-5:before {
+  background: #0E2759 !important;
+}
+
+/* line 176, ../sass/_clouds.scss */
+.cloud.color-6:after, .cloud.color-6, .cloud.color-6:before {
+  background: #E3DBD8 !important;
+}
+
+/* line 179, ../sass/_clouds.scss */
+.cloud.color-7:after, .cloud.color-7, .cloud.color-7:before {
+  background: #C4DAFF !important;
+}
+
+/* line 193, ../sass/_clouds.scss */
 .cloud:after {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -556,7 +617,7 @@ div[class^="x"] {
   width: 100px;
 }
 
-/* line 160, ../sass/_clouds.scss */
+/* line 204, ../sass/_clouds.scss */
 .cloud:before {
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;

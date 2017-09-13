@@ -123,67 +123,67 @@ section#section-two .glitch {
 }
 @keyframes noise-anim {
   0% {
-    clip: rect(5px, 9999px, 97px, 0);
+    clip: rect(56px, 9999px, 5px, 0);
   }
   5% {
-    clip: rect(93px, 9999px, 79px, 0);
+    clip: rect(66px, 9999px, 38px, 0);
   }
   10% {
-    clip: rect(18px, 9999px, 91px, 0);
+    clip: rect(34px, 9999px, 98px, 0);
   }
   15% {
-    clip: rect(50px, 9999px, 52px, 0);
-  }
-  20% {
     clip: rect(67px, 9999px, 20px, 0);
   }
+  20% {
+    clip: rect(52px, 9999px, 48px, 0);
+  }
   25% {
-    clip: rect(78px, 9999px, 13px, 0);
+    clip: rect(99px, 9999px, 3px, 0);
   }
   30% {
-    clip: rect(62px, 9999px, 44px, 0);
-  }
-  35% {
-    clip: rect(73px, 9999px, 68px, 0);
-  }
-  40% {
-    clip: rect(76px, 9999px, 48px, 0);
-  }
-  45% {
-    clip: rect(54px, 9999px, 41px, 0);
-  }
-  50% {
-    clip: rect(8px, 9999px, 76px, 0);
-  }
-  55% {
-    clip: rect(9px, 9999px, 59px, 0);
-  }
-  60% {
-    clip: rect(42px, 9999px, 100px, 0);
-  }
-  65% {
-    clip: rect(1px, 9999px, 25px, 0);
-  }
-  70% {
-    clip: rect(64px, 9999px, 78px, 0);
-  }
-  75% {
-    clip: rect(59px, 9999px, 57px, 0);
-  }
-  80% {
-    clip: rect(3px, 9999px, 4px, 0);
-  }
-  85% {
-    clip: rect(48px, 9999px, 49px, 0);
-  }
-  90% {
-    clip: rect(82px, 9999px, 16px, 0);
-  }
-  95% {
     clip: rect(16px, 9999px, 6px, 0);
   }
+  35% {
+    clip: rect(25px, 9999px, 10px, 0);
+  }
+  40% {
+    clip: rect(69px, 9999px, 12px, 0);
+  }
+  45% {
+    clip: rect(63px, 9999px, 55px, 0);
+  }
+  50% {
+    clip: rect(28px, 9999px, 12px, 0);
+  }
+  55% {
+    clip: rect(59px, 9999px, 91px, 0);
+  }
+  60% {
+    clip: rect(55px, 9999px, 17px, 0);
+  }
+  65% {
+    clip: rect(26px, 9999px, 25px, 0);
+  }
+  70% {
+    clip: rect(20px, 9999px, 8px, 0);
+  }
+  75% {
+    clip: rect(100px, 9999px, 54px, 0);
+  }
+  80% {
+    clip: rect(45px, 9999px, 85px, 0);
+  }
+  85% {
+    clip: rect(36px, 9999px, 31px, 0);
+  }
+  90% {
+    clip: rect(76px, 9999px, 72px, 0);
+  }
+  95% {
+    clip: rect(79px, 9999px, 100px, 0);
+  }
   100% {
-    clip: rect(10px, 9999px, 41px, 0);
+    clip: rect(31px, 9999px, 97px, 0);
   }
 }
 /* line 123, ../sass/_home.scss */
@@ -201,67 +201,67 @@ section#section-two .glitch:after {
 }
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(31px, 9999px, 82px, 0);
+    clip: rect(64px, 9999px, 58px, 0);
   }
   5% {
-    clip: rect(24px, 9999px, 38px, 0);
+    clip: rect(18px, 9999px, 74px, 0);
   }
   10% {
-    clip: rect(28px, 9999px, 54px, 0);
+    clip: rect(4px, 9999px, 38px, 0);
   }
   15% {
-    clip: rect(87px, 9999px, 86px, 0);
+    clip: rect(7px, 9999px, 16px, 0);
   }
   20% {
-    clip: rect(46px, 9999px, 98px, 0);
+    clip: rect(80px, 9999px, 48px, 0);
   }
   25% {
-    clip: rect(11px, 9999px, 90px, 0);
+    clip: rect(23px, 9999px, 58px, 0);
   }
   30% {
-    clip: rect(50px, 9999px, 58px, 0);
+    clip: rect(6px, 9999px, 42px, 0);
   }
   35% {
-    clip: rect(95px, 9999px, 79px, 0);
+    clip: rect(7px, 9999px, 74px, 0);
   }
   40% {
-    clip: rect(37px, 9999px, 8px, 0);
+    clip: rect(1px, 9999px, 97px, 0);
   }
   45% {
-    clip: rect(87px, 9999px, 35px, 0);
+    clip: rect(37px, 9999px, 38px, 0);
   }
   50% {
-    clip: rect(50px, 9999px, 1px, 0);
+    clip: rect(25px, 9999px, 100px, 0);
   }
   55% {
-    clip: rect(98px, 9999px, 54px, 0);
+    clip: rect(62px, 9999px, 61px, 0);
   }
   60% {
-    clip: rect(3px, 9999px, 32px, 0);
+    clip: rect(79px, 9999px, 95px, 0);
   }
   65% {
-    clip: rect(57px, 9999px, 70px, 0);
+    clip: rect(53px, 9999px, 13px, 0);
   }
   70% {
-    clip: rect(46px, 9999px, 94px, 0);
+    clip: rect(16px, 9999px, 94px, 0);
   }
   75% {
-    clip: rect(20px, 9999px, 70px, 0);
+    clip: rect(54px, 9999px, 76px, 0);
   }
   80% {
-    clip: rect(39px, 9999px, 69px, 0);
+    clip: rect(64px, 9999px, 53px, 0);
   }
   85% {
-    clip: rect(8px, 9999px, 55px, 0);
+    clip: rect(8px, 9999px, 47px, 0);
   }
   90% {
-    clip: rect(47px, 9999px, 79px, 0);
+    clip: rect(29px, 9999px, 37px, 0);
   }
   95% {
-    clip: rect(24px, 9999px, 68px, 0);
+    clip: rect(100px, 9999px, 94px, 0);
   }
   100% {
-    clip: rect(2px, 9999px, 56px, 0);
+    clip: rect(94px, 9999px, 63px, 0);
   }
 }
 /* line 144, ../sass/_home.scss */
@@ -417,9 +417,8 @@ footer ul li a:hover {
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
-/* line 5, ../sass/_game.scss */
+/* line 4, ../sass/_game.scss */
 body.game {
   /*Car*/
   /*Ground*/
@@ -427,7 +426,7 @@ body.game {
   /*Road Side*/
   /*Sky*/
 }
-/* line 7, ../sass/_game.scss */
+/* line 6, ../sass/_game.scss */
 body.game .car {
   position: absolute;
   width: 250px;
@@ -436,23 +435,23 @@ body.game .car {
   left: 50%;
   z-index: 9;
 }
-/* line 16, ../sass/_game.scss */
+/* line 15, ../sass/_game.scss */
 body.game .car > div {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 21, ../sass/_game.scss */
+/* line 20, ../sass/_game.scss */
 body.game .car-body {
   background: url(../img/rrrear.png) no-repeat;
   background-size: cover;
 }
-/* line 25, ../sass/_game.scss */
+/* line 24, ../sass/_game.scss */
 body.game .tires {
   background: url(http://zoonthemes.com/web-animations/car/v.1/img/sport-tires.png) no-repeat;
   background-size: cover;
 }
-/* line 32, ../sass/_game.scss */
+/* line 31, ../sass/_game.scss */
 body.game #ground {
   position: absolute;
   width: 100%;
@@ -460,7 +459,7 @@ body.game #ground {
   display: block;
   top: 50%;
 }
-/* line 39, ../sass/_game.scss */
+/* line 38, ../sass/_game.scss */
 body.game .ground {
   position: absolute;
   width: 100%;
@@ -468,7 +467,7 @@ body.game .ground {
   top: 60%;
   background: #d0ae56;
 }
-/* line 49, ../sass/_game.scss */
+/* line 48, ../sass/_game.scss */
 body.game .road {
   position: relative;
   width: 300px;
@@ -481,7 +480,7 @@ body.game .road {
   overflow: hidden;
   display: block;
 }
-/* line 61, ../sass/_game.scss */
+/* line 60, ../sass/_game.scss */
 body.game .lines {
   position: relative;
   width: 0;
@@ -490,7 +489,7 @@ body.game .lines {
   margin: auto;
   border-left: 8px dashed #bf9000;
 }
-/* line 74, ../sass/_game.scss */
+/* line 73, ../sass/_game.scss */
 body.game .road-object,
 body.game .shadow {
   position: absolute;
@@ -500,7 +499,7 @@ body.game .shadow {
   z-index: 1;
   left: 15%;
 }
-/* line 83, ../sass/_game.scss */
+/* line 82, ../sass/_game.scss */
 body.game .shadow {
   top: 100%;
   z-index: -1;
@@ -508,7 +507,7 @@ body.game .shadow {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 90, ../sass/_game.scss */
+/* line 89, ../sass/_game.scss */
 body.game .cactus {
   position: absolute;
   width: 150px;
@@ -517,7 +516,7 @@ body.game .cactus {
   background: url(https://openclipart.org/image/2400px/svg_to_png/201901/cactus.png) no-repeat;
   background-size: 129px;
 }
-/* line 101, ../sass/_game.scss */
+/* line 100, ../sass/_game.scss */
 body.game #sky {
   position: absolute;
   width: 100%;
@@ -526,13 +525,13 @@ body.game #sky {
   background: url("http://lesliebakermft.com/wp-content/uploads/2015/05/Sky-BG.png") no-repeat;
   background-size: cover;
 }
-/* line 109, ../sass/_game.scss */
+/* line 108, ../sass/_game.scss */
 body.game #sky p {
   padding: 0 20px;
   color: #333;
   font-weight: bold;
 }
-/* line 114, ../sass/_game.scss */
+/* line 113, ../sass/_game.scss */
 body.game .mountain {
   position: absolute;
   width: 1024px;

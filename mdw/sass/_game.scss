@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  &.game{
+    /*Car*/
+    .car {
+      position: absolute;
+      width: 250px;
+      height: 200px;
+      top: 40%;
+      left: 50%;
+      z-index: 9;
+    }
+
+    .car > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .car-body {
+      background: url(../img/rrrear.png) no-repeat;
+      background-size: cover;
+    }
+    .tires {
+      background: url(http://zoonthemes.com/web-animations/car/v.1/img/sport-tires.png) no-repeat;
+      background-size: cover;
+    }
+
+
+    /*Ground*/
+    #ground {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      display: block;
+      top: 50%;
+    }
+    .ground {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      top: 60%;
+      background: #d0ae56;
+    }
+
+
+    /*Road*/
+    .road {
+      position: relative;
+      width: 300px;
+      height: 100%;
+      bottom: 0;
+      margin: auto;
+      background: #354852;
+      border-left: 8px solid #ddd;
+      border-right: 8px solid #ddd;
+      overflow: hidden;
+      display: block;
+    }
+    .lines {
+      position: relative;
+      width: 0;
+      height: 100%;
+      top: -20%;
+      margin: auto;
+      border-left: 8px dashed #bf9000;
+    }
+
+    /*Road Side*/
+    .road-object {
+
+    }
+    .road-object,
+    .shadow {
+      position: absolute;
+      bottom: -180px;
+      width: 70%;
+      height: 129px;
+      z-index: 1;
+      left: 15%;
+    }
+    .shadow {
+      top: 100%;
+      z-index: -1;
+      opacity: 0;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+    .cactus {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      right: auto;
+      background: url(https://openclipart.org/image/2400px/svg_to_png/201901/cactus.png) no-repeat;
+      background-size: 129px;
+    }
+
+
+    /*Sky*/
+    #sky {
+      position: absolute;
+      width: 100%;
+      height: 200%;
+      top: 0;
+      background: url('http://lesliebakermft.com/wp-content/uploads/2015/05/Sky-BG.png') no-repeat;
+      background-size: cover;
+    }
+    #sky p {
+      padding: 0 20px;
+      color: #333;
+      font-weight: bold;
+    }
+    .mountain {
+      position: absolute;
+      width: 1024px;
+      height: 720px;
+      top: 40%;
+      left: 30%;
+      background: url(http://www.pngall.com/wp-content/uploads/2016/06/Castle-Transparent.png) no-repeat;
+      background-size: 1024px 720px;
+      -ms-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+  }
+}
+

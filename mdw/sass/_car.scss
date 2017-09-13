@@ -1,0 +1,85 @@
+section#section-three{
+  background: url("https://cdn.pixabay.com/photo/2015/12/08/00/29/northern-lights-1081752_1280.jpg");
+  /*-webkit-animation: clouds 30s linear infinite;
+  animation: clouds 30s linear infinite;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  .container-car {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .road {
+    height: 30px;
+    /*background: url("../img/sand.jpg");
+    background-size: 200px auto;
+    -webkit-animation: road 2s linear infinite;
+    animation: road 2s linear infinite;*/
+  }
+  .car {
+    margin: 10% auto -25px;
+    position: relative;
+    width: 300px;
+    -webkit-animation: car 15s infinite;
+    animation: car 15s infinite;
+  }
+  .car img { width: 100%; animation: suspension 1s infinite; }
+  .car .wheel {
+    background: url("../img/wheel.png") no-repeat center center;
+    background-size: 99% auto;
+    display: block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    bottom: 5px;
+    -webkit-animation: spin 0.2s linear infinite;
+    animation: spin 0.2s linear infinite;
+  }
+  .wheel.front { left: 27px; }
+  .wheel.back { right: 23px; }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-360deg); }
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+  @-webkit-keyframes road {
+    from { background-position: 0 0; }
+    to { background-position: 200% 0; }
+  }
+  @keyframes road {
+    from { background-position: 0 0; }
+    to { background-position: 200% 0; }
+  }
+  @-webkit-keyframes car {
+    50% { -webkit-transform: translateX(10%); }
+    70% { -webkit-transform: translateX(-20%); }
+    100% { -webkit-transform: translateX(0%); }
+  }
+  @keyframes car {
+    50% { transform: translateX(10%); }
+    70% { transform: translateX(-20%); }
+    100% { transform: translateX(0%); }
+  }
+  @-webkit-keyframes suspension {
+    0% { -webkit-transform: translateY(1px); }
+    50% { -webkit-transform: translateY(3px); }
+    100% { -webkit-transform: translateY(1px); }
+  }
+  @keyframes suspension {
+    0% { transform: translateY(1px); }
+    50% { transform: translateY(3px); }
+    100% { transform: translateY(1px); }
+  }
+  @-webkit-keyframes clouds {
+    from { background-position: 0 0; }
+    to { background-position: 200% 0; }
+  }
+  @keyframes clouds {
+    from { background-position: 0 0; }
+    to { background-position: 200% 0; }
+  }
+}

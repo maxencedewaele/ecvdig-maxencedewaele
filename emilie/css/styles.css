@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #58529F;
+
+      background: url(../img/bg.png) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+#canvasHolder {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+}
+
+#container {
+  display: flex;
+  max-height: 100vh;
+    
+    background: url(../img/scene.png) no-repeat center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}

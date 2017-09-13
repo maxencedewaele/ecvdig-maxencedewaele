@@ -1,8 +1,32 @@
+var songsArray = [
+   {
+      name: "Daft Punk - Harder better faster",
+      img : "Images/daft.jpg",
+      song: "Songs/daft.mp3",
+      link: "https://www.youtube.com/channel/UCKHFvArwRwQU2VbRjMpaVGw",
+   },
+   {
+      name: "Moderat - Eating Hooks",
+      img : "Images/moderat.jpg",
+      song: "Songs/moderat.mp3",
+      link: "http://moderat.fm/",
+   },
+   {
+      name: "Vitalic - Waiting for the stars",
+      img : "Images/vitalic.jpg",
+      song: "Songs/vitalic.mp3",
+      link: "https://www.vitalic.org/",
+   }
+];
+
+var randomMusic = songsArray[Math.floor(Math.random() * songsArray.length)];
+
 function preload(){
+   console.log(randomMusic.name);
    soundFormats('mp3', 'ogg');
    var songs = ["vitalic.mp3", "daft.mp3", "moderat.mp3"];
    var selectedSong = Math.floor(Math.random() *songs.length);
-   sound = loadSound('songs/'+songs[selectedSong]+'');
+   sound = loadSound(randomMusic.song);
 }
 
 // RESIZE :D
@@ -32,6 +56,7 @@ var imgDefault;
 var reverseButton;
 var pauseButton;
 var playButton;
+var songTitle;
 
 
 function togglePlay() {
@@ -55,6 +80,9 @@ function setup() {
    for(var i=0; i<50; i++) {
       balls[i] = new Ball();
    }
+
+   songTitle = new title();
+   songTitle.display();
 
    // COVER IMAGE
    imgDefault = new Img();

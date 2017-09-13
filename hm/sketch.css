@@ -22,6 +22,7 @@ button {
    letter-spacing: 2px;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
    cursor: pointer;
+   outline: 0;
 }
 
 .reversed {
@@ -35,4 +36,20 @@ button {
    top: 30px;
    width: 100px;
    cursor: crosshair;
+}
+
+.title {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 30px;
+   color: #141414;
+}
+
+.link {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 14px;
+   padding: 5px 10px;
+   background: #141414;
 }

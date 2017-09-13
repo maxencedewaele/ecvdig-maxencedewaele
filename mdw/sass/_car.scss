@@ -1,7 +1,7 @@
 section#section-three{
   background: url("../img/bg.jpg");
-  /*-webkit-animation: clouds 30s linear infinite;
-  animation: clouds 30s linear infinite;*/
+  -webkit-animation: clouds 30s linear infinite;
+  animation: clouds 30s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -30,7 +30,7 @@ section#section-three{
     bottom: 0;
     left: 10%;
     &2{
-      width: 350px;
+      width: 370px;
       left: 50%;
     }
   }
@@ -43,8 +43,8 @@ section#section-three{
     height: 55px;
     position: absolute;
     bottom: 5px;
-    -webkit-animation: spin 0.2s linear infinite;
-    animation: spin 0.2s linear infinite;
+    -webkit-animation: spin 0.1s linear infinite;
+    animation: spin 0.1s linear infinite;
 
     &2{
       background: url("../img/wheel2.png") no-repeat center center;
@@ -56,7 +56,7 @@ section#section-three{
         left: 52px;
       }
       &.back{
-        right: 32px;
+        right: 30px;
       }
     }
   }

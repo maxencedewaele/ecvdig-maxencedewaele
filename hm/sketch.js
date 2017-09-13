@@ -79,7 +79,7 @@ function setup() {
    canvas = createCanvas(w,h);
    amplitude = new p5.Amplitude();
    sound.amp(0.4);
-   sound.setVolume(0.1);
+   sound.setVolume(0.5);
    sound.stop();
 
    for(var i=0; i<50; i++) {

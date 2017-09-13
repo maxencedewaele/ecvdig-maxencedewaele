@@ -1,7 +1,8 @@
 section#section-three{
-  background: url("https://cdn.pixabay.com/photo/2015/12/08/00/29/northern-lights-1081752_1280.jpg");
-  /*-webkit-animation: clouds 30s linear infinite;
-  animation: clouds 30s linear infinite;*/
+  /*background: url("../img/bg.jpg");*/
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 19%, rgba(0, 0, 0, 0) 100%), url("../img/bg.jpg");
+  -webkit-animation: clouds 30s linear infinite;
+  animation: clouds 30s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -30,25 +31,29 @@ section#section-three{
     bottom: 0;
     left: 10%;
     &2{
-      width: 350px;
+      width: 370px;
       left: 50%;
     }
   }
   .car img { width: 100%; animation: suspension 1s infinite; }
-  .car .wheel {
+  .wheel{
+    &:not(.wheel2){
+      background: url("../img/wheeldark.png") no-repeat center center;
+    }
+  }
+  .wheel2{
     background: url("../img/wheel.png") no-repeat center center;
-    background-size: 99% auto;
+  }
+  .car .wheel {
+    background-size: 100%;
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     bottom: 5px;
-    -webkit-animation: spin 0.2s linear infinite;
-    animation: spin 0.2s linear infinite;
-
+    -webkit-animation: spin 0.01s linear infinite;
+    animation: spin 0.01s linear infinite;
     &2{
-      background: url("../img/wheel2.png") no-repeat center center;
-      background-size: 100%;
       width: 60px;
       height: 60px;
       bottom: 0;
@@ -56,7 +61,7 @@ section#section-three{
         left: 52px;
       }
       &.back{
-        right: 32px;
+        right: 30px;
       }
     }
   }

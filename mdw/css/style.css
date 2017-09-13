@@ -123,67 +123,67 @@ section#section-two .glitch {
 }
 @keyframes noise-anim {
   0% {
-    clip: rect(77px, 9999px, 41px, 0);
+    clip: rect(56px, 9999px, 5px, 0);
   }
   5% {
-    clip: rect(31px, 9999px, 65px, 0);
+    clip: rect(66px, 9999px, 38px, 0);
   }
   10% {
-    clip: rect(91px, 9999px, 74px, 0);
+    clip: rect(34px, 9999px, 98px, 0);
   }
   15% {
-    clip: rect(61px, 9999px, 27px, 0);
+    clip: rect(67px, 9999px, 20px, 0);
   }
   20% {
-    clip: rect(61px, 9999px, 91px, 0);
+    clip: rect(52px, 9999px, 48px, 0);
   }
   25% {
-    clip: rect(62px, 9999px, 90px, 0);
+    clip: rect(99px, 9999px, 3px, 0);
   }
   30% {
-    clip: rect(72px, 9999px, 65px, 0);
+    clip: rect(16px, 9999px, 6px, 0);
   }
   35% {
-    clip: rect(94px, 9999px, 68px, 0);
+    clip: rect(25px, 9999px, 10px, 0);
   }
   40% {
-    clip: rect(84px, 9999px, 98px, 0);
+    clip: rect(69px, 9999px, 12px, 0);
   }
   45% {
-    clip: rect(30px, 9999px, 89px, 0);
+    clip: rect(63px, 9999px, 55px, 0);
   }
   50% {
-    clip: rect(25px, 9999px, 45px, 0);
+    clip: rect(28px, 9999px, 12px, 0);
   }
   55% {
-    clip: rect(4px, 9999px, 32px, 0);
+    clip: rect(59px, 9999px, 91px, 0);
   }
   60% {
-    clip: rect(87px, 9999px, 62px, 0);
+    clip: rect(55px, 9999px, 17px, 0);
   }
   65% {
-    clip: rect(12px, 9999px, 42px, 0);
+    clip: rect(26px, 9999px, 25px, 0);
   }
   70% {
-    clip: rect(96px, 9999px, 99px, 0);
+    clip: rect(20px, 9999px, 8px, 0);
   }
   75% {
-    clip: rect(60px, 9999px, 95px, 0);
+    clip: rect(100px, 9999px, 54px, 0);
   }
   80% {
-    clip: rect(92px, 9999px, 9px, 0);
+    clip: rect(45px, 9999px, 85px, 0);
   }
   85% {
-    clip: rect(14px, 9999px, 71px, 0);
+    clip: rect(36px, 9999px, 31px, 0);
   }
   90% {
-    clip: rect(32px, 9999px, 33px, 0);
+    clip: rect(76px, 9999px, 72px, 0);
   }
   95% {
-    clip: rect(78px, 9999px, 16px, 0);
+    clip: rect(79px, 9999px, 100px, 0);
   }
   100% {
-    clip: rect(80px, 9999px, 3px, 0);
+    clip: rect(31px, 9999px, 97px, 0);
   }
 }
 /* line 123, ../sass/_home.scss */
@@ -201,67 +201,67 @@ section#section-two .glitch:after {
 }
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(40px, 9999px, 98px, 0);
+    clip: rect(64px, 9999px, 58px, 0);
   }
   5% {
-    clip: rect(44px, 9999px, 11px, 0);
+    clip: rect(18px, 9999px, 74px, 0);
   }
   10% {
-    clip: rect(87px, 9999px, 74px, 0);
+    clip: rect(4px, 9999px, 38px, 0);
   }
   15% {
-    clip: rect(13px, 9999px, 44px, 0);
+    clip: rect(7px, 9999px, 16px, 0);
   }
   20% {
-    clip: rect(41px, 9999px, 54px, 0);
+    clip: rect(80px, 9999px, 48px, 0);
   }
   25% {
-    clip: rect(30px, 9999px, 94px, 0);
+    clip: rect(23px, 9999px, 58px, 0);
   }
   30% {
-    clip: rect(52px, 9999px, 94px, 0);
+    clip: rect(6px, 9999px, 42px, 0);
   }
   35% {
-    clip: rect(85px, 9999px, 49px, 0);
+    clip: rect(7px, 9999px, 74px, 0);
   }
   40% {
-    clip: rect(90px, 9999px, 18px, 0);
+    clip: rect(1px, 9999px, 97px, 0);
   }
   45% {
-    clip: rect(77px, 9999px, 53px, 0);
+    clip: rect(37px, 9999px, 38px, 0);
   }
   50% {
-    clip: rect(84px, 9999px, 22px, 0);
+    clip: rect(25px, 9999px, 100px, 0);
   }
   55% {
-    clip: rect(43px, 9999px, 90px, 0);
+    clip: rect(62px, 9999px, 61px, 0);
   }
   60% {
-    clip: rect(29px, 9999px, 100px, 0);
+    clip: rect(79px, 9999px, 95px, 0);
   }
   65% {
-    clip: rect(78px, 9999px, 7px, 0);
+    clip: rect(53px, 9999px, 13px, 0);
   }
   70% {
-    clip: rect(29px, 9999px, 50px, 0);
+    clip: rect(16px, 9999px, 94px, 0);
   }
   75% {
-    clip: rect(32px, 9999px, 36px, 0);
+    clip: rect(54px, 9999px, 76px, 0);
   }
   80% {
-    clip: rect(67px, 9999px, 38px, 0);
+    clip: rect(64px, 9999px, 53px, 0);
   }
   85% {
-    clip: rect(22px, 9999px, 28px, 0);
+    clip: rect(8px, 9999px, 47px, 0);
   }
   90% {
-    clip: rect(37px, 9999px, 66px, 0);
+    clip: rect(29px, 9999px, 37px, 0);
   }
   95% {
-    clip: rect(5px, 9999px, 49px, 0);
+    clip: rect(100px, 9999px, 94px, 0);
   }
   100% {
-    clip: rect(73px, 9999px, 62px, 0);
+    clip: rect(94px, 9999px, 63px, 0);
   }
 }
 /* line 144, ../sass/_home.scss */
@@ -413,22 +413,155 @@ footer ul li a:hover {
   color: #b2b2b2;
 }
 
+/* line 1, ../sass/_game.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 4, ../sass/_game.scss */
+body.game {
+  /*Car*/
+  /*Ground*/
+  /*Road*/
+  /*Road Side*/
+  /*Sky*/
+}
+/* line 6, ../sass/_game.scss */
+body.game .car {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 40%;
+  left: 50%;
+  z-index: 9;
+}
+/* line 15, ../sass/_game.scss */
+body.game .car > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 20, ../sass/_game.scss */
+body.game .car-body {
+  background: url(../img/rrrear.png) no-repeat;
+  background-size: cover;
+}
+/* line 24, ../sass/_game.scss */
+body.game .tires {
+  background: url(http://zoonthemes.com/web-animations/car/v.1/img/sport-tires.png) no-repeat;
+  background-size: cover;
+}
+/* line 31, ../sass/_game.scss */
+body.game #ground {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  display: block;
+  top: 50%;
+}
+/* line 38, ../sass/_game.scss */
+body.game .ground {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 60%;
+  background: #d0ae56;
+}
+/* line 48, ../sass/_game.scss */
+body.game .road {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  bottom: 0;
+  margin: auto;
+  background: #354852;
+  border-left: 8px solid #ddd;
+  border-right: 8px solid #ddd;
+  overflow: hidden;
+  display: block;
+}
+/* line 60, ../sass/_game.scss */
+body.game .lines {
+  position: relative;
+  width: 0;
+  height: 100%;
+  top: -20%;
+  margin: auto;
+  border-left: 8px dashed #bf9000;
+}
+/* line 73, ../sass/_game.scss */
+body.game .road-object,
+body.game .shadow {
+  position: absolute;
+  bottom: -180px;
+  width: 70%;
+  height: 129px;
+  z-index: 1;
+  left: 15%;
+}
+/* line 82, ../sass/_game.scss */
+body.game .shadow {
+  top: 100%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 89, ../sass/_game.scss */
+body.game .cactus {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: auto;
+  background: url(https://openclipart.org/image/2400px/svg_to_png/201901/cactus.png) no-repeat;
+  background-size: 129px;
+}
+/* line 100, ../sass/_game.scss */
+body.game #sky {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  background: url("http://lesliebakermft.com/wp-content/uploads/2015/05/Sky-BG.png") no-repeat;
+  background-size: cover;
+}
+/* line 108, ../sass/_game.scss */
+body.game #sky p {
+  padding: 0 20px;
+  color: #333;
+  font-weight: bold;
+}
+/* line 113, ../sass/_game.scss */
+body.game .mountain {
+  position: absolute;
+  width: 1024px;
+  height: 720px;
+  top: 40%;
+  left: 30%;
+  background: url(http://www.pngall.com/wp-content/uploads/2016/06/Castle-Transparent.png) no-repeat;
+  background-size: 1024px 720px;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
 /* line 1, ../sass/_car.scss */
 section#section-three {
-  background: url("https://cdn.pixabay.com/photo/2015/12/08/00/29/northern-lights-1081752_1280.jpg");
-  /*-webkit-animation: clouds 30s linear infinite;
-  animation: clouds 30s linear infinite;*/
+  /*background: url("../img/bg.jpg");*/
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.5) 19%, transparent 100%), url("../img/bg.jpg");
+  -webkit-animation: clouds 30s linear infinite;
+  animation: clouds 30s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
 }
-/* line 8, ../sass/_car.scss */
+/* line 9, ../sass/_car.scss */
 section#section-three .container-car {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-/* line 13, ../sass/_car.scss */
+/* line 14, ../sass/_car.scss */
 section#section-three .road {
   height: 70px;
   /*background: url("../img/sand.jpg");
@@ -436,11 +569,11 @@ section#section-three .road {
   -webkit-animation: road 2s linear infinite;
   animation: road 2s linear infinite;*/
 }
-/* line 20, ../sass/_car.scss */
+/* line 21, ../sass/_car.scss */
 section#section-three .cars {
   position: relative;
 }
-/* line 23, ../sass/_car.scss */
+/* line 24, ../sass/_car.scss */
 section#section-three .car {
   margin: 10% auto -25px;
   /*position: relative;*/
@@ -451,49 +584,54 @@ section#section-three .car {
   bottom: 0;
   left: 10%;
 }
-/* line 32, ../sass/_car.scss */
+/* line 33, ../sass/_car.scss */
 section#section-three .car2 {
-  width: 350px;
+  width: 370px;
   left: 50%;
 }
-/* line 37, ../sass/_car.scss */
+/* line 38, ../sass/_car.scss */
 section#section-three .car img {
   width: 100%;
   animation: suspension 1s infinite;
 }
-/* line 38, ../sass/_car.scss */
-section#section-three .car .wheel {
+/* line 40, ../sass/_car.scss */
+section#section-three .wheel:not(.wheel2) {
+  background: url("../img/wheeldark.png") no-repeat center center;
+}
+/* line 44, ../sass/_car.scss */
+section#section-three .wheel2 {
   background: url("../img/wheel.png") no-repeat center center;
-  background-size: 99% auto;
+}
+/* line 47, ../sass/_car.scss */
+section#section-three .car .wheel {
+  background-size: 100%;
   display: block;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 5px;
-  -webkit-animation: spin 0.2s linear infinite;
-  animation: spin 0.2s linear infinite;
+  -webkit-animation: spin 0.01s linear infinite;
+  animation: spin 0.01s linear infinite;
 }
-/* line 49, ../sass/_car.scss */
+/* line 56, ../sass/_car.scss */
 section#section-three .car .wheel2 {
-  background: url("../img/wheel2.png") no-repeat center center;
-  background-size: 100%;
   width: 60px;
   height: 60px;
   bottom: 0;
 }
-/* line 55, ../sass/_car.scss */
+/* line 60, ../sass/_car.scss */
 section#section-three .car .wheel2.front {
   left: 52px;
 }
-/* line 58, ../sass/_car.scss */
-section#section-three .car .wheel2.back {
-  right: 32px;
-}
 /* line 63, ../sass/_car.scss */
+section#section-three .car .wheel2.back {
+  right: 30px;
+}
+/* line 68, ../sass/_car.scss */
 section#section-three .wheel.front {
   left: 20px;
 }
-/* line 64, ../sass/_car.scss */
+/* line 69, ../sass/_car.scss */
 section#section-three .wheel.back {
   right: 27px;
 }

@@ -37,9 +37,71 @@ section#section-{
   &two{
     position: relative;
     height: 100vh;
-    background: url(../img/rrelight.jpg) no-repeat center, black;
+    /*background: url(../img/rrelight.jpg) no-repeat center, black;*/
+    background: url("https://68.media.tumblr.com/a27ff19db2059aa93a892f423f80085a/tumblr_ntsmzm9HCL1tm2sobo1_500.gif") no-repeat center, black;
     color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rrlogo{
+      max-width: 100%;
+    }
+    .blink {
+      -webkit-animation-name: blink;
+      -moz-animation-name: blink;
+      -o-animation-name: blink;
+      animation-name: blink;
+      -webktit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      -o-animation-duration: 1s;
+      animation-duration: 1s;
+    }
 
+    .blink-infinite {
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    .blink-5 {
+      -webkit-animation-iteration-count: 5;
+      -moz-animation-iteration-count: 5;
+      -o-animation-iteration-count: 5;
+      animation-iteration-count: 5;
+    }
+
+    .blink-furiously {
+      -webkit-animation-duration: 0.3s;
+      -moz-animation-duration: 0.3s;
+      -o-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+    }
+
+    @-webkit-keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    @-moz-keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    @-o-keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
     .glitch{
       color:white;
       font-size:100px;
@@ -96,32 +158,8 @@ section#section-{
       left: 0;
     }
   }
-}
-footer{
-  color: $white;
-  background: url(https://wallpaperscraft.com/image/dark_spots_texture_background_50355_1920x1080.jpg) no-repeat center;
-  background-size: cover;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  ul{
-    padding-left: 0;
-    margin: 0;
-    text-align: center;
-    li{
-      margin: 0 10px;
-      display: inline-block;
-      a{
-        color: $white;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        transition: $anim_default;
-        &:hover{
-          color: $grey1;
-        }
-      }
-    }
+  &three{
+    position: relative;
+    height: 50vh;
   }
 }

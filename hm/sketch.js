@@ -16,6 +16,12 @@ var songsArray = [
       img : "Images/vitalic.jpg",
       song: "Songs/vitalic.mp3",
       link: "https://www.vitalic.org/",
+   },
+   {
+      name: "Calvins Harris - Feels",
+      img : "Images/feels.jpg",
+      song: "Songs/feels.mp3",
+      link: "http://new.calvinharris.com/",
    }
 ];
 

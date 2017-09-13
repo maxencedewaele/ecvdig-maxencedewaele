@@ -5,15 +5,20 @@ var stage;
 stage = new createjs.Stage("canvas");
 
 // Variables des chemins des images
-var hero;
+var imgHero, cimg;
+
+// Variables des objets
+var hero, carrot, unePlateform;
 
 // Variables des éléments sur la scène
 var nbElement = 0;
-var nbElementScene = 1;
+var nbElementScene = 2;
 
+// Variables contenant des tableaux
+var platforms;
 
 // Variables de direction
-var left, right ;
+var left, right;
 
 
 // Déplacement en y
@@ -34,30 +39,39 @@ var inAir = false ;
 // Variable permettant d'animer le héros
 var animPersonnage = false ;
 
-var hPlatform = 4.9 * (stage.canvas.height/6);
-var lPlatform = stage.canvas.width;
+// Variable pour connaître le centre du hero
+var heroCenter ;
+
+var hPlatform1 = 4.9 * (stage.canvas.height/6);
+var lPlatform1 = stage.canvas.width;
+
+var xPlatform2 = stage.canvas.width/8;
+var yPlatform2 = 4.5 * (stage.canvas.height/8);
+var wPlatform2 = 3 * (stage.canvas.width/16);
+
+var xPlatform3 = 5 * (stage.canvas.width/8);
+var yPlatform3 = 2.4 * (stage.canvas.height/8);
+var wPlatform3 = 2 * (stage.canvas.width/8);
 
 // Plateformes
-var plateformX = [0];
-var plateformY = [hPlatform];
-var plateformW = [lPlatform];
+var plateformX = [0, xPlatform2, xPlatform3];
+var plateformY = [hPlatform1, yPlatform2, yPlatform3];
+var plateformW = [lPlatform1, wPlatform2, wPlatform3];
 
 
 function init() {
-
-    
     // Initialisation de la boucle mise à jour de l'affichage
-   createjs.Ticker.addEventListener("tick", tick);
-
-    //chargement de la source de l'image
-    srcHero = new Image();
-    srcHero.src = "img/lapinou.png";
-    srcHero.onload = chargementImage;
-
     createjs.Ticker.addEventListener("tick", tick);
 
-    //rafraichissement de la scene
-    stage.update();
+    // Chargement de la source de l'image
+    imgHero = new Image();
+    imgHero.src = "img/lapinou.png";
+    imgHero.onload = chargementImage;
+    
+    // Image de la clé
+	cimg = new Image();
+	cimg.src = "img/carrot.png";
+	cimg.onload = chargementImage;
 }
 
 
@@ -73,11 +87,16 @@ function chargementImage(evt)
 
 function jouer()  {
 	// Création de l'objet hero
-	hero = new Hero(srcHero);
+	hero = new Hero(imgHero);
 	stage.addChild(hero);
 	hero.x = stage.canvas.width/2;
     tiersCanvas = stage.canvas.height/6;
 	hero.y = 4.9 * tiersCanvas;
+    
+    carrot = new createjs.Bitmap(cimg);
+	carrot.x = 13 * (stage.canvas.width/16);
+	carrot.y = 2.4 * (stage.canvas.height/8);
+	stage.addChild(carrot);
     
     
     // Déclaration du tableau
@@ -104,7 +123,7 @@ function jouer()  {
 
 function handleKeyDown(evt) {
 	var key = evt.keyCode; // Récupère dans la variable key le code de la touche appuyée
-	console.log(key);
+	//console.log(key);
 
 	if(key == 37)
 	{
@@ -116,7 +135,7 @@ function handleKeyDown(evt) {
 		right = true;
 	}
 
-	if(key == 32)
+	if(key == 32 || key == 38)
 	{
 		jump();
 	}
@@ -176,6 +195,8 @@ function tick(evt)
 
 	deplacement();
     allCollisions();
+    
+    heroCenter = hero.y-20;
 }
 
 function deplacement() {
@@ -216,8 +237,7 @@ function deplacement() {
 function allCollisions() {
 	inAir = true;
 
-	for(i=0; i<plateformW.length; i++)
-	{
+	for(i=0; i<plateformW.length; i++) {
 		if(hero.y >= platforms[i].y &&
 			hero.y <= (platforms[i].y + platforms[i].height) &&
 			hero.x > platforms[i].x &&
@@ -230,6 +250,19 @@ function allCollisions() {
 					hero.gotoAndPlay("idle");
 				}
 		}
+	}
+    
+    if (collisionHero(carrot.x, carrot.y,20)) {
+		carrot.visible = false;
+	}
+}
+
+function collisionHero (xPos, yPos, Radius){
+	var distX = xPos - hero.x;
+	var distY = yPos - heroCenter;
+	var distR = Radius + 20;
+	if (distX * distX + distY * distY <= distR * distR) {
+		return true;
 	}
 }
 

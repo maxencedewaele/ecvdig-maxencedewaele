@@ -2,3 +2,37 @@ body,
 canvas {
    margin: 0;
 }
+
+
+button {
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+   background: #141414;
+   padding: 10px 15px;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   cursor: pointer;
+}
+
+.reversed {
+   color: #141414;
+   background: none;
+}
+
+.cover {
+   position: absolute;
+   left: 30px;
+   top: 30px;
+   width: 100px;
+   cursor: crosshair;
+}

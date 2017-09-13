@@ -75,7 +75,6 @@ function setup() {
    sound.amp(0.4);
    sound.setVolume(0.1);
    sound.stop();
-   sound.play();
 
    for(var i=0; i<50; i++) {
       balls[i] = new Ball();

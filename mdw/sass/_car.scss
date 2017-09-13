@@ -65,8 +65,8 @@ section#section-three{
       }
     }
   }
-  .wheel.front { left: 20px; }
-  .wheel.back { right: 27px; }
+  .wheel.front { left: 24px; }
+  .wheel.back { right: 29px; }
   @-webkit-keyframes spin {
     from { -webkit-transform: rotate(0deg); }
     to { -webkit-transform: rotate(-360deg); }

@@ -46,16 +46,17 @@ section#section-two {
   /*background: url(../img/rrelight.jpg) no-repeat center, black;*/
   background: url("https://img-s1.onedio.com/id-572c7df76ebb114e16d54a74/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-495abf5b9b34c6e6e87cd64baa9f724bc7850ef5.gif") no-repeat center, black;
   /*background: url("https://img-s1.onedio.com/id-572c7df76ebb114e16d54a74/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-495abf5b9b34c6e6e87cd64baa9f724bc7850ef5.gif") no-repeat center, linear-gradient(180deg, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 50%);*/
+  background-size: 100%;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 47, ../sass/_home.scss */
+/* line 48, ../sass/_home.scss */
 section#section-two .rrlogo {
   max-width: 100%;
 }
-/* line 50, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 section#section-two .blink {
   -webkit-animation-name: blink;
   -moz-animation-name: blink;
@@ -70,21 +71,21 @@ section#section-two .blink {
   -o-animation-duration: 1s;
   animation-duration: 1s;
 }
-/* line 65, ../sass/_home.scss */
+/* line 66, ../sass/_home.scss */
 section#section-two .blink-infinite {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 72, ../sass/_home.scss */
+/* line 73, ../sass/_home.scss */
 section#section-two .blink-5 {
   -webkit-animation-iteration-count: 5;
   -moz-animation-iteration-count: 5;
   -o-animation-iteration-count: 5;
   animation-iteration-count: 5;
 }
-/* line 79, ../sass/_home.scss */
+/* line 80, ../sass/_home.scss */
 section#section-two .blink-furiously {
   -webkit-animation-duration: 0.3s;
   -moz-animation-duration: 0.3s;
@@ -111,7 +112,7 @@ section#section-two .blink-furiously {
     opacity: 0;
   }
 }
-/* line 106, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 section#section-two .glitch {
   color: white;
   font-size: 100px;
@@ -123,70 +124,70 @@ section#section-two .glitch {
 }
 @keyframes noise-anim {
   0% {
-    clip: rect(21px, 9999px, 67px, 0);
+    clip: rect(35px, 9999px, 53px, 0);
   }
   5% {
-    clip: rect(27px, 9999px, 35px, 0);
+    clip: rect(54px, 9999px, 66px, 0);
   }
   10% {
-    clip: rect(24px, 9999px, 72px, 0);
+    clip: rect(49px, 9999px, 1px, 0);
   }
   15% {
-    clip: rect(75px, 9999px, 41px, 0);
+    clip: rect(49px, 9999px, 79px, 0);
   }
   20% {
-    clip: rect(54px, 9999px, 16px, 0);
+    clip: rect(26px, 9999px, 17px, 0);
   }
   25% {
-    clip: rect(94px, 9999px, 9px, 0);
+    clip: rect(3px, 9999px, 86px, 0);
   }
   30% {
-    clip: rect(3px, 9999px, 96px, 0);
+    clip: rect(9px, 9999px, 89px, 0);
   }
   35% {
-    clip: rect(75px, 9999px, 60px, 0);
+    clip: rect(19px, 9999px, 16px, 0);
   }
   40% {
-    clip: rect(5px, 9999px, 4px, 0);
+    clip: rect(23px, 9999px, 45px, 0);
   }
   45% {
-    clip: rect(13px, 9999px, 49px, 0);
+    clip: rect(31px, 9999px, 69px, 0);
   }
   50% {
-    clip: rect(33px, 9999px, 3px, 0);
+    clip: rect(63px, 9999px, 57px, 0);
   }
   55% {
-    clip: rect(22px, 9999px, 81px, 0);
+    clip: rect(91px, 9999px, 12px, 0);
   }
   60% {
-    clip: rect(6px, 9999px, 42px, 0);
+    clip: rect(27px, 9999px, 81px, 0);
   }
   65% {
-    clip: rect(65px, 9999px, 41px, 0);
+    clip: rect(57px, 9999px, 47px, 0);
   }
   70% {
-    clip: rect(13px, 9999px, 49px, 0);
+    clip: rect(45px, 9999px, 88px, 0);
   }
   75% {
-    clip: rect(18px, 9999px, 8px, 0);
+    clip: rect(72px, 9999px, 90px, 0);
   }
   80% {
-    clip: rect(26px, 9999px, 22px, 0);
+    clip: rect(75px, 9999px, 87px, 0);
   }
   85% {
-    clip: rect(56px, 9999px, 47px, 0);
+    clip: rect(87px, 9999px, 1px, 0);
   }
   90% {
-    clip: rect(56px, 9999px, 33px, 0);
+    clip: rect(52px, 9999px, 58px, 0);
   }
   95% {
-    clip: rect(87px, 9999px, 35px, 0);
+    clip: rect(27px, 9999px, 60px, 0);
   }
   100% {
-    clip: rect(98px, 9999px, 53px, 0);
+    clip: rect(7px, 9999px, 30px, 0);
   }
 }
-/* line 123, ../sass/_home.scss */
+/* line 124, ../sass/_home.scss */
 section#section-two .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -201,70 +202,70 @@ section#section-two .glitch:after {
 }
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(26px, 9999px, 44px, 0);
+    clip: rect(39px, 9999px, 63px, 0);
   }
   5% {
-    clip: rect(79px, 9999px, 19px, 0);
+    clip: rect(18px, 9999px, 76px, 0);
   }
   10% {
-    clip: rect(88px, 9999px, 93px, 0);
+    clip: rect(40px, 9999px, 81px, 0);
   }
   15% {
-    clip: rect(36px, 9999px, 12px, 0);
+    clip: rect(44px, 9999px, 58px, 0);
   }
   20% {
-    clip: rect(71px, 9999px, 83px, 0);
+    clip: rect(95px, 9999px, 45px, 0);
   }
   25% {
-    clip: rect(69px, 9999px, 57px, 0);
+    clip: rect(34px, 9999px, 60px, 0);
   }
   30% {
-    clip: rect(21px, 9999px, 66px, 0);
+    clip: rect(84px, 9999px, 70px, 0);
   }
   35% {
-    clip: rect(63px, 9999px, 34px, 0);
+    clip: rect(98px, 9999px, 82px, 0);
   }
   40% {
-    clip: rect(48px, 9999px, 45px, 0);
+    clip: rect(47px, 9999px, 89px, 0);
   }
   45% {
-    clip: rect(80px, 9999px, 67px, 0);
+    clip: rect(64px, 9999px, 91px, 0);
   }
   50% {
-    clip: rect(70px, 9999px, 35px, 0);
+    clip: rect(62px, 9999px, 83px, 0);
   }
   55% {
-    clip: rect(70px, 9999px, 81px, 0);
+    clip: rect(14px, 9999px, 89px, 0);
   }
   60% {
-    clip: rect(13px, 9999px, 26px, 0);
+    clip: rect(64px, 9999px, 84px, 0);
   }
   65% {
-    clip: rect(54px, 9999px, 25px, 0);
+    clip: rect(42px, 9999px, 78px, 0);
   }
   70% {
-    clip: rect(26px, 9999px, 83px, 0);
+    clip: rect(86px, 9999px, 61px, 0);
   }
   75% {
-    clip: rect(55px, 9999px, 90px, 0);
+    clip: rect(79px, 9999px, 82px, 0);
   }
   80% {
-    clip: rect(93px, 9999px, 14px, 0);
+    clip: rect(44px, 9999px, 7px, 0);
   }
   85% {
-    clip: rect(76px, 9999px, 73px, 0);
+    clip: rect(91px, 9999px, 92px, 0);
   }
   90% {
-    clip: rect(99px, 9999px, 21px, 0);
+    clip: rect(48px, 9999px, 99px, 0);
   }
   95% {
-    clip: rect(99px, 9999px, 51px, 0);
+    clip: rect(36px, 9999px, 37px, 0);
   }
   100% {
-    clip: rect(2px, 9999px, 37px, 0);
+    clip: rect(89px, 9999px, 48px, 0);
   }
 }
-/* line 144, ../sass/_home.scss */
+/* line 145, ../sass/_home.scss */
 section#section-two .glitch:before {
   content: attr(data-text);
   position: absolute;
@@ -277,13 +278,13 @@ section#section-two .glitch:before {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
-/* line 156, ../sass/_home.scss */
+/* line 157, ../sass/_home.scss */
 section#section-two canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 162, ../sass/_home.scss */
+/* line 163, ../sass/_home.scss */
 section#section-three {
   position: relative;
   height: 50vh;

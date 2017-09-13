@@ -1,5 +1,6 @@
 section#section-three{
-  background: url("../img/bg.jpg");
+  /*background: url("../img/bg.jpg");*/
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 19%, rgba(0, 0, 0, 0) 100%), url("../img/bg.jpg");
   -webkit-animation: clouds 30s linear infinite;
   animation: clouds 30s linear infinite;
   background-repeat: no-repeat;

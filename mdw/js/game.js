@@ -1,5 +1,10 @@
 (function($) {
     $(document).ready(function() {
+        $('body.game .choose-car > div img').click(function(){
+            $('.choose-car').hide();
+            $('.car-body').addClass($(this).data('car'));
+        });
+
         var $sky = $('.sky'),
             $ground = $('.ground'),
             $road = $('.road'),
@@ -9,19 +14,19 @@
             $shadow = $('.shadow'),
             $lines = $('.lines'),
             $car = $('.car'),
-            $carBody = $('.car-body'),
-            $mountain = $('.mountain');
+            $carBody = $('.car-body');
+            /*$mountain = $('.mountain');*/
 
         // Presets
         TweenMax.set($road, {
-            rotationX: 30,
-            transformPerspective: 120
+            rotationX: 20,
+            transformPerspective: 140
         });
         TweenMax.set($roadObjL, {
             rotationY: '+=180'
         });
         TweenMax.set($shadow, {
-            rotationX: 180
+            rotationX: 100
         });
         TweenMax.set($car, {
             xPercent: -50
@@ -43,17 +48,17 @@
         TweenMax.staggerFrom($roadObj, 4, {
             top: '10',
             ease: Power1.easeIn,
-            scale: 0.3,
+            scale: 0.6,
             repeat: -1
         }, 1);
 
-        //Background Mountain Animation
+       /* //Background Mountain Animation
         TweenMax.to($mountain, 50, {
             yPercent: -100,
             xPercent: 50,
             scale: 0.5,
             ease: Linear.easeNone
-        });
+        });*/
 
         // Keyboard Actions
         $(document).keydown(function(e) {

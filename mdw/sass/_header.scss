@@ -61,9 +61,12 @@ $ani-delay: 1s;
 
 section#section-one{
   header{
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 19%, rgba(0, 0, 0, 0) 100%);
+    position: fixed;
+    width: 100%;
     padding: 20px 40px;
     z-index: 100;
-    position: absolute;
+    /*position: absolute;*/
     align-items: center;
     display: flex;
     img{

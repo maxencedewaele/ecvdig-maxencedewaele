@@ -8,7 +8,7 @@ stage = new createjs.Stage("canvas");
 var imgHero, cimg;
 
 // Variables des objets
-var hero, carrot, unePlateform;
+var hero, carrot, unePlateform, boutonRejouer;
 
 // Variables des éléments sur la scène
 var nbElement = 0;
@@ -22,7 +22,7 @@ var left, right;
 
 
 // Déplacement en y
-var vy = 0 ;
+var vy = 0;
 
 // Déplacement en x
 var vx = 0;
@@ -31,16 +31,19 @@ var vx = 0;
 var gravity = 2;
 
 // Variable pour le saut
-var jumping = false
+var jumping = false;
 
 // Variable indiquant si le héros est dans les airs(true)
-var inAir = false ;
+var inAir = false;
 
 // Variable permettant d'animer le héros
-var animPersonnage = false ;
+var animPersonnage = false;
 
 // Variable pour connaître le centre du hero
-var heroCenter ;
+var heroCenter;
+
+// Variable pour rejouer
+var play = true;
 
 var hPlatform1 = 4.9 * (stage.canvas.height/6);
 var lPlatform1 = stage.canvas.width;
@@ -78,8 +81,7 @@ function init() {
 function chargementImage(evt)
 {
 	nbElement = nbElement + 1;
-	if (nbElement == nbElementScene)
-	{
+	if (nbElement == nbElementScene) {
 		jouer();
 	}
 }
@@ -90,8 +92,7 @@ function jouer()  {
 	hero = new Hero(imgHero);
 	stage.addChild(hero);
 	hero.x = stage.canvas.width/2;
-    tiersCanvas = stage.canvas.height/6;
-	hero.y = 4.9 * tiersCanvas;
+	hero.y = 4.9 * (stage.canvas.height/6);
     
     carrot = new createjs.Bitmap(cimg);
 	carrot.x = 13 * (stage.canvas.width/16);
@@ -142,10 +143,9 @@ function handleKeyDown(evt) {
 }
 
 function jump() {
-	if (jumping == false && inAir == false)
-	{	
+	if (jumping == false && inAir == false) {	
 		hero.gotoAndPlay("jump");
-		hero.y = hero.y-20;
+		hero.y = hero.y - 20;
 		animPersonnage = false;
 		vy = -25;
 		jumping = true;
@@ -171,25 +171,21 @@ function handleKeyUp(evt) {
 	animPersonnage = false;
 }
 
-function gestionClavier(evt)
-{
+function gestionClavier(evt) {
 	var key=evt.keyCode; // Récupère dans la variable key le code de la touche appuyée
 	console.log(key);
-	if(key == 38)
-	{
+	if(key == 38) {
 		hero.gotoAndPlay("jump");
 	}
 
-	if(key == 39)
-	{
+	if(key == 39) {
 		hero.gotoAndPlay("walk");
 	}
 }
 
 
 
-function tick(evt)
-{
+function tick(evt) {
 	// Mise à jour affichage 30*par seconde ici
 	stage.update();
 
@@ -200,8 +196,7 @@ function tick(evt)
 }
 
 function deplacement() {
-	if(left == true)
-	{
+	if(left == true) {
 		vx = -20;
 	}
 
@@ -212,8 +207,7 @@ function deplacement() {
 		animPersonnage = true;
 	}
 
-	if(right == true)
-	{
+	if(right == true) {
 		vx = +20;
 	}
 
@@ -255,15 +249,85 @@ function allCollisions() {
     if (collisionHero(carrot.x, carrot.y,20)) {
 		carrot.visible = false;
 	}
+    
+    if (carrot.visible == false) {
+		win();
+	}
 }
 
-function collisionHero (xPos, yPos, Radius){
+function collisionHero (xPos, yPos, Radius) {
 	var distX = xPos - hero.x;
 	var distY = yPos - heroCenter;
 	var distR = Radius + 20;
 	if (distX * distX + distY * distY <= distR * distR) {
 		return true;
 	}
+}
+
+
+
+function win() {
+	//Arrêter le ticker
+	createjs.Ticker.removeAllEventListeners();
+	play = false;
+
+
+	// Création du container du bouton rejouer
+	boutonRejouer = new createjs.Container();
+
+	// Création du bouton
+	var bouton = new createjs.Shape();
+	bouton.graphics.beginFill('rgb(0,0,0)');
+	bouton.graphics.drawRect(0,0,100,50);
+	bouton.graphics.endFill();
+	boutonRejouer.addChild(bouton);
+
+	// Création du texte Rejouer
+	var texteRejouer = new createjs.Text("Rejouer", "20px Arial", "#ffffff"); 
+	texteRejouer.textAlign = "center";
+	texteRejouer.textBaseline = "middle";
+	boutonRejouer.addChild(texteRejouer);
+	texteRejouer.x=100/2;
+	texteRejouer.y=50/2;
+
+	// Ajout du container à la scène
+	stage.addChild(boutonRejouer);
+	boutonRejouer.x = (stage.canvas.width/2) - 50;
+	boutonRejouer.y = stage.canvas.height/2;
+
+	stage.update(); //pour faire apparaître le texte et bouton
+
+	boutonRejouer.addEventListener("click",rejouer);
+}
+
+
+function rejouer(evt) {
+    stage.removeChild(boutonRejouer);
+	hero.x = stage.canvas.width/2;
+	hero.y = 4.9 * (stage.canvas.height/6);
+    
+	hero.visible = false;
+	carrot.visible = true;
+	animPersonnage = false ;
+
+	// Déplacement en y
+	vy = 0;
+
+	// Déplacement en x
+	vx = 0;
+
+	// Variable pour le saut
+	jumping = false;
+
+	// Variable indiquant si le héros est dans les airs(true)
+	inAir = false;
+
+	// Variable pour rejouer
+	play = true;
+
+	createjs.Ticker.addEventListener("tick", tick);
+
+	jouer();
 }
 
 window.onload=init;

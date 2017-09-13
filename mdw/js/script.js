@@ -40,7 +40,7 @@
 });
     function loop(){
         $.fillStyle="rgba(0,0,0,.1)";
-        /*$.fillRect(0,0,w,h);*/
+        $.fillRect(0,0,w,0.3);
         stars.forEach(e=>{
             e.a+=e.s;
         $.save();

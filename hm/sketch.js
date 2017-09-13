@@ -1,5 +1,5 @@
 function preload(){
-  sound = loadSound('songs/moderat.mp3');
+  sound = loadSound('songs/daft.mp3');
 }
 
 // RESIZE :D
@@ -21,24 +21,25 @@ var randBackR = Math.floor(Math.random() * 255) + 128;
 var randBackG = Math.floor(Math.random() * 255) + 128;
 var randBackB = Math.floor(Math.random() * 255) + 128;
 var sound;
-
+var amplitude;
 
 
 
 function togglePlay() {
-   if(song.isPlaying()) {
-      song.pause();
+   if(sound.isPlaying()) {
+      sound.pause();
    } else {
-      song.loop();
+      sound.loop();
    }
 }
 
 function setup() {
    var canvas = createCanvas(w,h);
    canvas.mouseClicked(togglePlay);
-   fft = new p5.FFT();
-   sound.amp(0.2);
+   amplitude = new p5.Amplitude();
+   sound.amp(0.4);
    sound.setVolume(0.1);
+   sound.stop();
    sound.play();
    for(var i=0; i<100; i++) {
       balls[i] = new Ball();
@@ -46,8 +47,9 @@ function setup() {
 }
 
 function draw() {
-   var spectrum = fft.analyze();
    background(randBackR,randBackG,randBackB);
+   translate(0,h/2);
+
    for(var i=0; i< balls.length; i++) {
       balls[i].display();
       balls[i].move();
@@ -57,16 +59,22 @@ function draw() {
 
 // Jitter class
 function Ball() {
-  this.x = random(w);
-  this.y = h/2;
+  this.x = random(w/4, 3*w/4);
+  this.y = 0;
   this.diameter = random(10, 30);
   this.r = random(128,255);
   this.g = random(128,255);
   this.b = random(128,255);
 
+
   this.move = function() {
-     this.x += random(-1,1);
-     this.y += random(-1,1);
+     var level = amplitude.getLevel();
+     var size = map(level, 0, 1, 0, 200);
+     var finalSize = size*40;
+
+     this.y = random(-finalSize,finalSize);
+
+
  }
 
   this.display = function() {

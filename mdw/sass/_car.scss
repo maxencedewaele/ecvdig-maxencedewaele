@@ -11,18 +11,28 @@ section#section-three{
     width: 100%;
   }
   .road {
-    height: 30px;
+    height: 70px;
     /*background: url("../img/sand.jpg");
     background-size: 200px auto;
     -webkit-animation: road 2s linear infinite;
     animation: road 2s linear infinite;*/
   }
+  .cars{
+    position: relative;
+  }
   .car {
     margin: 10% auto -25px;
-    position: relative;
+    /*position: relative;*/
     width: 300px;
     -webkit-animation: car 15s infinite;
     animation: car 15s infinite;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    &2{
+      width: 350px;
+      left: 50%;
+    }
   }
   .car img { width: 100%; animation: suspension 1s infinite; }
   .car .wheel {
@@ -35,9 +45,23 @@ section#section-three{
     bottom: 5px;
     -webkit-animation: spin 0.2s linear infinite;
     animation: spin 0.2s linear infinite;
+
+    &2{
+      background: url("../img/wheel2.png") no-repeat center center;
+      background-size: 100%;
+      width: 60px;
+      height: 60px;
+      bottom: 0;
+      &.front{
+        left: 52px;
+      }
+      &.back{
+        right: 32px;
+      }
+    }
   }
-  .wheel.front { left: 27px; }
-  .wheel.back { right: 23px; }
+  .wheel.front { left: 20px; }
+  .wheel.back { right: 27px; }
   @-webkit-keyframes spin {
     from { -webkit-transform: rotate(0deg); }
     to { -webkit-transform: rotate(-360deg); }

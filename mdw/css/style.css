@@ -44,17 +44,18 @@ section#section-two {
   position: relative;
   height: 100vh;
   /*background: url(../img/rrelight.jpg) no-repeat center, black;*/
-  background: url("https://68.media.tumblr.com/a27ff19db2059aa93a892f423f80085a/tumblr_ntsmzm9HCL1tm2sobo1_500.gif") no-repeat center, black;
+  background: url("https://img-s1.onedio.com/id-572c7df76ebb114e16d54a74/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-495abf5b9b34c6e6e87cd64baa9f724bc7850ef5.gif") no-repeat center, black;
+  /*background: url("https://img-s1.onedio.com/id-572c7df76ebb114e16d54a74/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-495abf5b9b34c6e6e87cd64baa9f724bc7850ef5.gif") no-repeat center, linear-gradient(180deg, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 50%);*/
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 46, ../sass/_home.scss */
+/* line 47, ../sass/_home.scss */
 section#section-two .rrlogo {
   max-width: 100%;
 }
-/* line 49, ../sass/_home.scss */
+/* line 50, ../sass/_home.scss */
 section#section-two .blink {
   -webkit-animation-name: blink;
   -moz-animation-name: blink;
@@ -69,21 +70,21 @@ section#section-two .blink {
   -o-animation-duration: 1s;
   animation-duration: 1s;
 }
-/* line 64, ../sass/_home.scss */
+/* line 65, ../sass/_home.scss */
 section#section-two .blink-infinite {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 71, ../sass/_home.scss */
+/* line 72, ../sass/_home.scss */
 section#section-two .blink-5 {
   -webkit-animation-iteration-count: 5;
   -moz-animation-iteration-count: 5;
   -o-animation-iteration-count: 5;
   animation-iteration-count: 5;
 }
-/* line 78, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 section#section-two .blink-furiously {
   -webkit-animation-duration: 0.3s;
   -moz-animation-duration: 0.3s;
@@ -110,7 +111,7 @@ section#section-two .blink-furiously {
     opacity: 0;
   }
 }
-/* line 105, ../sass/_home.scss */
+/* line 106, ../sass/_home.scss */
 section#section-two .glitch {
   color: white;
   font-size: 100px;
@@ -122,70 +123,70 @@ section#section-two .glitch {
 }
 @keyframes noise-anim {
   0% {
-    clip: rect(28px, 9999px, 93px, 0);
+    clip: rect(77px, 9999px, 41px, 0);
   }
   5% {
-    clip: rect(92px, 9999px, 86px, 0);
+    clip: rect(31px, 9999px, 65px, 0);
   }
   10% {
-    clip: rect(68px, 9999px, 35px, 0);
+    clip: rect(91px, 9999px, 74px, 0);
   }
   15% {
-    clip: rect(96px, 9999px, 74px, 0);
+    clip: rect(61px, 9999px, 27px, 0);
   }
   20% {
-    clip: rect(43px, 9999px, 52px, 0);
+    clip: rect(61px, 9999px, 91px, 0);
   }
   25% {
-    clip: rect(55px, 9999px, 69px, 0);
+    clip: rect(62px, 9999px, 90px, 0);
   }
   30% {
-    clip: rect(66px, 9999px, 78px, 0);
+    clip: rect(72px, 9999px, 65px, 0);
   }
   35% {
-    clip: rect(100px, 9999px, 92px, 0);
+    clip: rect(94px, 9999px, 68px, 0);
   }
   40% {
-    clip: rect(64px, 9999px, 97px, 0);
+    clip: rect(84px, 9999px, 98px, 0);
   }
   45% {
-    clip: rect(41px, 9999px, 89px, 0);
+    clip: rect(30px, 9999px, 89px, 0);
   }
   50% {
-    clip: rect(100px, 9999px, 57px, 0);
+    clip: rect(25px, 9999px, 45px, 0);
   }
   55% {
-    clip: rect(87px, 9999px, 88px, 0);
+    clip: rect(4px, 9999px, 32px, 0);
   }
   60% {
-    clip: rect(59px, 9999px, 9px, 0);
+    clip: rect(87px, 9999px, 62px, 0);
   }
   65% {
-    clip: rect(30px, 9999px, 84px, 0);
+    clip: rect(12px, 9999px, 42px, 0);
   }
   70% {
-    clip: rect(86px, 9999px, 74px, 0);
+    clip: rect(96px, 9999px, 99px, 0);
   }
   75% {
-    clip: rect(19px, 9999px, 28px, 0);
+    clip: rect(60px, 9999px, 95px, 0);
   }
   80% {
-    clip: rect(15px, 9999px, 5px, 0);
+    clip: rect(92px, 9999px, 9px, 0);
   }
   85% {
-    clip: rect(65px, 9999px, 76px, 0);
+    clip: rect(14px, 9999px, 71px, 0);
   }
   90% {
-    clip: rect(60px, 9999px, 84px, 0);
+    clip: rect(32px, 9999px, 33px, 0);
   }
   95% {
-    clip: rect(12px, 9999px, 16px, 0);
+    clip: rect(78px, 9999px, 16px, 0);
   }
   100% {
-    clip: rect(91px, 9999px, 90px, 0);
+    clip: rect(80px, 9999px, 3px, 0);
   }
 }
-/* line 122, ../sass/_home.scss */
+/* line 123, ../sass/_home.scss */
 section#section-two .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -200,70 +201,70 @@ section#section-two .glitch:after {
 }
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(79px, 9999px, 89px, 0);
+    clip: rect(40px, 9999px, 98px, 0);
   }
   5% {
-    clip: rect(15px, 9999px, 65px, 0);
+    clip: rect(44px, 9999px, 11px, 0);
   }
   10% {
-    clip: rect(68px, 9999px, 49px, 0);
+    clip: rect(87px, 9999px, 74px, 0);
   }
   15% {
-    clip: rect(76px, 9999px, 42px, 0);
+    clip: rect(13px, 9999px, 44px, 0);
   }
   20% {
-    clip: rect(77px, 9999px, 2px, 0);
+    clip: rect(41px, 9999px, 54px, 0);
   }
   25% {
-    clip: rect(5px, 9999px, 5px, 0);
+    clip: rect(30px, 9999px, 94px, 0);
   }
   30% {
-    clip: rect(100px, 9999px, 56px, 0);
+    clip: rect(52px, 9999px, 94px, 0);
   }
   35% {
-    clip: rect(99px, 9999px, 2px, 0);
+    clip: rect(85px, 9999px, 49px, 0);
   }
   40% {
-    clip: rect(58px, 9999px, 71px, 0);
+    clip: rect(90px, 9999px, 18px, 0);
   }
   45% {
-    clip: rect(77px, 9999px, 72px, 0);
+    clip: rect(77px, 9999px, 53px, 0);
   }
   50% {
-    clip: rect(35px, 9999px, 78px, 0);
+    clip: rect(84px, 9999px, 22px, 0);
   }
   55% {
-    clip: rect(83px, 9999px, 97px, 0);
+    clip: rect(43px, 9999px, 90px, 0);
   }
   60% {
-    clip: rect(10px, 9999px, 86px, 0);
+    clip: rect(29px, 9999px, 100px, 0);
   }
   65% {
-    clip: rect(48px, 9999px, 78px, 0);
+    clip: rect(78px, 9999px, 7px, 0);
   }
   70% {
-    clip: rect(78px, 9999px, 13px, 0);
+    clip: rect(29px, 9999px, 50px, 0);
   }
   75% {
-    clip: rect(54px, 9999px, 34px, 0);
+    clip: rect(32px, 9999px, 36px, 0);
   }
   80% {
-    clip: rect(18px, 9999px, 7px, 0);
+    clip: rect(67px, 9999px, 38px, 0);
   }
   85% {
-    clip: rect(12px, 9999px, 42px, 0);
+    clip: rect(22px, 9999px, 28px, 0);
   }
   90% {
-    clip: rect(31px, 9999px, 44px, 0);
+    clip: rect(37px, 9999px, 66px, 0);
   }
   95% {
-    clip: rect(15px, 9999px, 95px, 0);
+    clip: rect(5px, 9999px, 49px, 0);
   }
   100% {
-    clip: rect(16px, 9999px, 12px, 0);
+    clip: rect(73px, 9999px, 62px, 0);
   }
 }
-/* line 143, ../sass/_home.scss */
+/* line 144, ../sass/_home.scss */
 section#section-two .glitch:before {
   content: attr(data-text);
   position: absolute;
@@ -276,13 +277,13 @@ section#section-two .glitch:before {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
-/* line 155, ../sass/_home.scss */
+/* line 156, ../sass/_home.scss */
 section#section-two canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 161, ../sass/_home.scss */
+/* line 162, ../sass/_home.scss */
 section#section-three {
   position: relative;
   height: 50vh;
@@ -429,26 +430,38 @@ section#section-three .container-car {
 }
 /* line 13, ../sass/_car.scss */
 section#section-three .road {
-  height: 30px;
+  height: 70px;
   /*background: url("../img/sand.jpg");
   background-size: 200px auto;
   -webkit-animation: road 2s linear infinite;
   animation: road 2s linear infinite;*/
 }
 /* line 20, ../sass/_car.scss */
+section#section-three .cars {
+  position: relative;
+}
+/* line 23, ../sass/_car.scss */
 section#section-three .car {
   margin: 10% auto -25px;
-  position: relative;
+  /*position: relative;*/
   width: 300px;
   -webkit-animation: car 15s infinite;
   animation: car 15s infinite;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
 }
-/* line 27, ../sass/_car.scss */
+/* line 32, ../sass/_car.scss */
+section#section-three .car2 {
+  width: 350px;
+  left: 50%;
+}
+/* line 37, ../sass/_car.scss */
 section#section-three .car img {
   width: 100%;
   animation: suspension 1s infinite;
 }
-/* line 28, ../sass/_car.scss */
+/* line 38, ../sass/_car.scss */
 section#section-three .car .wheel {
   background: url("../img/wheel.png") no-repeat center center;
   background-size: 99% auto;
@@ -460,13 +473,29 @@ section#section-three .car .wheel {
   -webkit-animation: spin 0.2s linear infinite;
   animation: spin 0.2s linear infinite;
 }
-/* line 39, ../sass/_car.scss */
-section#section-three .wheel.front {
-  left: 27px;
+/* line 49, ../sass/_car.scss */
+section#section-three .car .wheel2 {
+  background: url("../img/wheel2.png") no-repeat center center;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
 }
-/* line 40, ../sass/_car.scss */
+/* line 55, ../sass/_car.scss */
+section#section-three .car .wheel2.front {
+  left: 52px;
+}
+/* line 58, ../sass/_car.scss */
+section#section-three .car .wheel2.back {
+  right: 32px;
+}
+/* line 63, ../sass/_car.scss */
+section#section-three .wheel.front {
+  left: 20px;
+}
+/* line 64, ../sass/_car.scss */
 section#section-three .wheel.back {
-  right: 23px;
+  right: 27px;
 }
 @-webkit-keyframes spin {
   from {
